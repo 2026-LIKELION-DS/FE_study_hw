@@ -1,0 +1,237 @@
+@import url("https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Apple SD Gothic Neo";
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 150px;
+  border-bottom: 0.1px solid #65656568;
+  position: sticky;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo1 {
+  background-image: url("/FE_study_hw/everytime/img/에타.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+}
+
+.logo2 {
+  background-position: center;
+  align-items: center;
+  background-image: url("/FE_study_hw/everytime/img/logo2.png");
+  width: 120px;
+  height: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+}
+.link > a {
+  padding: 0px;
+  display: inline-block;
+  margin: 15px;
+
+  font-size: 16px;
+  color: black;
+  text-decoration-line: none;
+  font-weight: 700;
+}
+a:active {
+  color: #f91f15;
+}
+
+.etc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chat {
+  background-image: url("/FE_study_hw/everytime/img/chat_filled.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+}
+.myinfo {
+  background-image: url("/FE_study_hw/everytime/img/user_filled.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+}
+.etc > div {
+  margin: 4px;
+  background-position: fixed;
+  border: 0.1px solid rgba(0, 0, 0, 0.29);
+}
+.chatdiv,
+.myinfodiv {
+  padding: 8px;
+  border-radius: 30%;
+}
+
+nav {
+  height: 230px;
+  border-bottom: 0.1px solid #65656568;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+  padding: 10px auto;
+  position: sticky;
+}
+.box {
+  display: flex;
+}
+.divider {
+  border-left: 0.5px solid rgba(0, 0, 0, 0.176);
+  width: 15px;
+  height: 200px;
+}
+.board1 p {
+  line-height: 2;
+  font-size: 13px;
+  color: #444444;
+  width: 138px;
+  height: 25px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#divider2,
+#divider7 {
+  border-left: none;
+}
+
+#more {
+  color: #f91f15;
+  font-weight: 700;
+  margin-left: 1px;
+}
+
+.big {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 30px 0px 0px 100px;
+  padding: 0 100px;
+  position: fixed;
+
+  width: 1000px;
+}
+.secret {
+  flex: 2;
+  border: 1px solid black;
+  width: 300px;
+  height: 300px;
+  margin-right: 30px;
+  padding: 10px;
+}
+.realtime {
+  flex: 1;
+  border: 1px solid black;
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+}
+
+.realtime_b {
+  border: 1px solid black;
+}
+
+.big [class*="board"] {
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+.secret_board {
+  border: 0.5px solid rgba(0, 0, 0, 0.176);
+  width: stretch;
+  padding: 10px;
+  font-size: 11px;
+}
+.keyword_board {
+  border: 0.5px solid rgba(0, 0, 0, 0.176);
+  width: stretch;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.k_blue {
+  display: flex;
+  margin-bottom: 10px;
+}
+.k_blue p {
+  margin: 0 5px;
+  padding: 12px;
+  background-color: #edfffe;
+  border-radius: 15px;
+}
+.blue_photo {
+  background-image: url("/FE_study_hw/everytime/img/question.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 5px;
+  padding: 12px;
+}
+.hot_photo {
+  background-image: url("/FE_study_hw/everytime/img/hotarticle.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 5px;
+  padding: 12px;
+}
+.h_blue {
+  display: flex;
+}
+.h_blue > div {
+  margin: 0 5px;
+  padding: 12px;
+  background-color: #fff3f3;
+  border-radius: 15px;
+}
+.new_board {
+  border: 0.5px solid rgba(0, 0, 0, 0.176);
+  width: stretch;
+  padding: 10px;
+  font-size: 11px;
+}
+
+.hot_good {
+  display: flex;
+}
+.goood {
+  display: flex;
+  align-items: center;
+}
+#good {
+  background-image: url("/FE_study_hw/everytime/img/container.articles.vote.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0px 5px;
+  width: 10px;
+  height: 10px;
+}
+span {
+  color: #f91f15;
+}
