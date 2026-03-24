@@ -20,7 +20,7 @@ header {
   align-items: center;
 }
 .logo1 {
-  background-image: url("/FE_study_hw/everytime/img/에타.png");
+  background-image: url("../img/에타.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 50px;
@@ -30,7 +30,7 @@ header {
 .logo2 {
   background-position: center;
   align-items: center;
-  background-image: url("/FE_study_hw/everytime/img/logo2.png");
+  background-image: url("../img/logo2.png");
   width: 120px;
   height: 80px;
   background-size: contain;
@@ -74,14 +74,14 @@ a:active {
   align-items: center;
 }
 .chat {
-  background-image: url("/FE_study_hw/everytime/img/chat_filled.svg");
+  background-image: url("../img/chat_filled.svg");
   background-size: contain;
   background-repeat: no-repeat;
   width: 25px;
   height: 25px;
 }
 .myinfo {
-  background-image: url("/FE_study_hw/everytime/img/user_filled.svg");
+  background-image: url("../img/user_filled.svg");
   background-size: contain;
   background-repeat: no-repeat;
   width: 25px;
@@ -200,7 +200,7 @@ nav {
   border-radius: 15px;
 }
 .blue_photo {
-  background-image: url("/FE_study_hw/everytime/img/question.png");
+  background-image: url("../img/question.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -208,7 +208,7 @@ nav {
   padding: 12px;
 }
 .hot_photo {
-  background-image: url("/FE_study_hw/everytime/img/hotarticle.png");
+  background-image: url("../img/hotarticle.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -237,7 +237,7 @@ nav {
 }
 
 .pen {
-  background-image: url("/FE_study_hw/everytime/img/container.write.background.png");
+  background-image: url("../img/container.write.background.png");
   background-size: contain;
   margin-left: auto;
   width: 30px;
@@ -252,7 +252,7 @@ nav {
   align-items: center;
 }
 #good {
-  background-image: url("/FE_study_hw/everytime/img/container.articles.vote.png");
+  background-image: url("../img/container.articles.vote.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
