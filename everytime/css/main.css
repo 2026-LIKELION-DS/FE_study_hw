@@ -9,7 +9,8 @@
 header {
   display: flex;
   justify-content: space-between;
-  padding: 10px 150px;
+  padding: 0px 150px;
+  margin-top: 5px;
   border-bottom: 0.1px solid #65656568;
   position: sticky;
 }
@@ -42,10 +43,11 @@ header {
   align-items: center;
   top: 0;
 }
+
 .link > a {
   padding: 0px;
   display: inline-block;
-  margin: 15px;
+  margin: 0px 15px;
 
   font-size: 16px;
   color: black;
@@ -54,6 +56,16 @@ header {
 }
 a:active {
   color: #f91f15;
+}
+
+#bbb {
+  margin-top: 5px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  color: #f91f15;
+  padding: 0px;
+  border-bottom: 5px solid #f91f15;
 }
 
 .etc {
@@ -108,7 +120,7 @@ nav {
   line-height: 2;
   font-size: 13px;
   color: #444444;
-  width: 138px;
+  width: 144px;
   height: 25px;
   overflow: hidden;
   white-space: nowrap;
@@ -137,9 +149,12 @@ nav {
 
   width: 1000px;
 }
+
+.big p {
+  font-size: 13px;
+}
 .secret {
   flex: 2;
-  border: 1px solid black;
   width: 300px;
   height: 300px;
   margin-right: 30px;
@@ -154,24 +169,24 @@ nav {
 }
 
 .realtime_b {
-  border: 1px solid black;
+  border: 0.5px solid rgba(0, 0, 0, 0.176);
+  width: stretch;
+  padding: 10px;
 }
 
-.big [class*="board"] {
-  margin-bottom: 5px;
-  font-size: 12px;
-}
 .secret_board {
   border: 0.5px solid rgba(0, 0, 0, 0.176);
   width: stretch;
   padding: 10px;
   font-size: 11px;
+  margin-bottom: 5px;
 }
 .keyword_board {
   border: 0.5px solid rgba(0, 0, 0, 0.176);
   width: stretch;
   padding: 10px;
   font-size: 12px;
+  margin-bottom: 5px;
 }
 
 .k_blue {
@@ -206,18 +221,31 @@ nav {
 .h_blue > div {
   margin: 0 5px;
   padding: 12px;
-  background-color: #fff3f3;
   border-radius: 15px;
 }
 .new_board {
-  border: 0.5px solid rgba(0, 0, 0, 0.176);
+  border: 2px solid rgba(0, 0, 0, 0.176);
+  background-color: #e3e3e366;
   width: stretch;
-  padding: 10px;
-  font-size: 11px;
+  padding: 5px 10px;
+
+  color: rgba(0, 0, 0, 0.398);
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 5px;
 }
 
+.pen {
+  background-image: url("/FE_study_hw/everytime/img/container.write.background.png");
+  background-size: contain;
+  margin-left: auto;
+  width: 30px;
+  height: 30px;
+}
 .hot_good {
   display: flex;
+  background-color: #fff3f3;
 }
 .goood {
   display: flex;
@@ -234,4 +262,23 @@ nav {
 }
 span {
   color: #f91f15;
+}
+
+.art1 {
+  border: 0.5px solid rgba(0, 0, 0, 0.176);
+  width: stretch;
+  padding: 18px;
+}
+
+.a1 {
+  font-weight: 600;
+}
+
+.time1 {
+  display: flex;
+  color: #a6a6a6;
+}
+
+.time1 > p {
+  margin-right: 3px;
 }
