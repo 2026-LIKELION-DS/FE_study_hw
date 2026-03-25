@@ -88,7 +88,7 @@ a:active {
   height: 25px;
 }
 .etc > div {
-  margin: 4px;
+  margin: 2px;
   background-position: fixed;
   border: 0.1px solid rgba(0, 0, 0, 0.29);
 }
@@ -144,7 +144,7 @@ nav {
   align-items: flex;
 
   padding: 0px auto;
-  margin: 30px 170px;
+  margin: 30px 180px;
 }
 
 .container p {
@@ -152,22 +152,22 @@ nav {
 }
 
 .aside_wrap {
-  flex: 0.8;
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 .secret {
   flex: 2;
-  margin-right: 10px;
+  margin-right: 30px;
 }
 aside {
+  width: 310px;
   margin-bottom: 10px;
   border: 1px solid #d6d6d6;
   border-bottom: none;
   background-color: #f9f9f9;
 }
-
 
 .real_b {
   display: block;
@@ -189,8 +189,8 @@ h4 {
 .secret_board {
   border: 0.5px solid rgba(0, 0, 0, 0.176);
   width: stretch;
-  padding: 10px;
-  font-size: 11px;
+  padding: 11px 15px;
+  font-size: 10px;
   margin-bottom: 5px;
 }
 .keyword_board {
@@ -198,7 +198,7 @@ h4 {
   width: stretch;
   padding: 10px;
   font-size: 12px;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
 }
 
 .k_blue {
@@ -239,7 +239,7 @@ h4 {
   border: 2px solid rgba(0, 0, 0, 0.176);
   background-color: #e3e3e366;
   width: stretch;
-  padding: 5px 10px;
+  padding: 7px 10px;
 
   color: rgba(0, 0, 0, 0.398);
   display: flex;
@@ -286,6 +286,9 @@ span {
 #a1 {
   font-weight: 700;
   color: black;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 13px;
 }
 
 .time1 {
@@ -333,4 +336,49 @@ span {
 .bluechat > span {
   color: #05bcbc;
   font-size: 11px;
+}
+
+/* hot 게시물 */
+
+.hot_b_title {
+  display: flex;
+  border-bottom: 1px solid #d6d6d6;
+  padding: 10px;
+  line-height: 20px;
+}
+.hot_b > p {
+  padding: 2px 0px;
+  color: #666;
+  font-size: 12px;
+  border-bottom: 1px solid #d6d6d6;
+}
+h4 {
+  color: #056ab5;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+#plz {
+  display: flex;
+  font-size: 14px;
+  color: black;
+  padding: 10px;
+  font-weight: normal;
+}
+
+.gray_more {
+  color: #a6a6a6;
+  margin-left: auto;
+}
+
+#before {
+  color: #a6a6a6;
+  margin-left: auto;
+  font-size: 13px;
+}
+
+#a2 {
+  line-height: normal;
+  overflow: hidden;
+  white-space: nowrap;
 }
