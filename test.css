@@ -1,0 +1,14 @@
+main {
+  display: flex;
+  gap: 20px;
+}
+
+/* 왼쪽 */
+.main-content {
+  flex: 3;
+}
+
+/* 오른쪽 */
+aside {
+  flex: 1;
+}
