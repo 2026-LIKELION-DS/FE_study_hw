@@ -1,0 +1,175 @@
+.container {
+    display: flex;
+    align-items: center; /*가운데줄기준*/
+    justify-content:space-between;
+    /*컨테이너 세개가 각각정렬됨*/
+}
+    
+.container1{
+    display: flex;
+    justify-content:flex-start;
+    align-items:stretch;
+}
+
+.container2{
+    display:flex;
+    justify-content:center;
+}
+
+.container3{
+    display:flex;
+    justify-content: flex-end;
+}
+
+.logoBox {
+    display: flex;
+    flex-direction: row;
+}
+.logoRight {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;    
+}
+
+#everytime {
+    font-size: 15px;
+    color: red;
+}
+
+#Duksung {
+    font-size: 20px;
+}
+
+.navbox{
+    display:flex;
+    background-color: rgb(234, 234, 234);
+    border:1px solid rgb(206, 204, 204);
+}
+
+.navbox1{
+    text-align: left;
+}
+
+.navbox2{
+    text-align: left;
+}
+.navbox3{
+    text-align: left;
+}
+.navbox4{
+    text-align: left;
+}
+.navbox5{
+    text-align: left;
+}
+.navbox6{
+    text-align: left;
+}
+.navbox7{
+    text-align: left;
+}
+
+ul {
+    list-style:none;
+}
+h2 {
+    border:1px solid rgb(220, 219, 219);
+    padding-left : 10px;
+    font-weight: 10px;
+}
+
+#bodyBox{
+    display:flex;
+    margin: 0 50px;
+    width : 100em;
+    padding : 25px 100px;
+}
+
+.sectionBox{
+    background-color: rgb(232, 246, 248);
+    font-size: 14px;
+    font-weight: 300; 
+    border-radius: 10%;
+    padding:10px;
+    margin:5px;
+}
+.sectionBox1{
+    display:flex;
+}
+.sectionBox2{
+    display:flex;
+    border-bottom:1px solid #d0cccc;
+    margin: 0;
+    padding:0px 5px 5px 0;
+}
+.sectionChBob{
+    background-color: rgb(253, 236, 240);
+    font-weight: 300;
+    font-size:14px;
+    border-radius: 10%;
+    padding: 10px;
+    margin:0px;
+}
+.txtColor{
+    color:red;
+    font-size: 14px;
+    font-weight: 300;
+}
+.textsubmit{
+    display:block;
+    color: #a6a6a6;
+    font-size: 14px;
+    background: #f9f9f9
+}
+.asideBox{
+    width : 300px;
+    margin : 20px 50px;
+    background-color: #f9f9f9;
+}
+.asideBox1{
+    border: 1px solid #d0cccc;
+}
+.asideBox2{
+    border: 1px solid #d0cccc;
+}
+.asideChBox{
+
+}
+.asidetitle{
+    color: #0f7bcd;
+    font-weight: 600;
+    border-bottom:1px solid #d0cccc;
+    padding :7px;
+    font-size:17px;
+}   
+.asidetxt{
+    text-align: left;
+    font-size: 15px;
+    font-weight: 450;
+    padding-left :10px;
+
+}
+.asideChtxt{
+    font-size: 12px;
+    text-align: left;
+    padding-left :7px;
+
+}
+.secret{
+    color :#949191;
+    border-bottom:1px solid #d0cccc;
+    font-size: 12px;
+    text-align: left;
+    padding-left :7px;
+}
+.listtxt{
+    padding: 0 10px 10px 10px;
+    border-bottom: 1px solid #d0cccc;
+    text-align: left;
+    font-weight : 200px;
+}
+
+input{
+    background-color:#d0cccc;
+    width: 50em;
+}
