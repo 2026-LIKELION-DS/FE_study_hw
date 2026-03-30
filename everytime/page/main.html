@@ -31,11 +31,11 @@
       </div>
     </header>
     <nav>
-      <div class="box">
+      <div class="divider_box">
         <div class="divider"></div>
         <div class="board1">
           <p>자유게시판</p>
-          <p>비밀게시판</p>
+          <p id="more">비밀게시판</p>
           <p>질문게시판</p>
           <p>졸업생게시판</p>
           <p>새내기게시판</p>
@@ -44,14 +44,14 @@
           <p>이벤트게시판</p>
         </div>
       </div>
-      <div class="box">
+      <div class="divider_box">
         <div class="divider" , id="divider2"></div>
         <div class="board1">
           <p>홍보게시판</p>
           <p>동아리 학회</p>
         </div>
       </div>
-      <div class="box">
+      <div class="divider_box">
         <div class="divider"></div>
         <div class="board1">
           <p>취업·진로</p>
@@ -61,7 +61,7 @@
           <p>미래의 회계사(CPA) 세무사(CTA)</p>
         </div>
       </div>
-      <div class="box">
+      <div class="divider_box">
         <div class="divider"></div>
         <div class="board1">
           <p>총학생회</p>
@@ -74,7 +74,7 @@
           <p id="more">더 보기</p>
         </div>
       </div>
-      <div class="box">
+      <div class="divider_box">
         <div class="divider"></div>
         <div class="board1">
           <p>👩‍💻디지털소프트웨어공학부 게시판👩‍💻</p>
@@ -87,7 +87,7 @@
           <p id="more">더 보기</p>
         </div>
       </div>
-      <div class="box">
+      <div class="divider_box">
         <div class="divider"></div>
         <div class="board1">
           <p>🌺뻔선뻔후 찾기 프로젝트🌸</p>
@@ -100,7 +100,7 @@
           <p>덕성여대~수유역 맛집</p>
         </div>
       </div>
-      <div class="box">
+      <div class="divider_box">
         <div class="divider" id="divider7"></div>
         <div class="board1">
           <p>덕성의 국가근로동자들ㄹㄹㄹ</p>
@@ -207,12 +207,22 @@
           </article>
         </div>
         <section class="section_end">
-          <div class="found">
-            <p>검색어를 입력하세요.</p>
-            <div class="img_found"></div>
+          <div class="search_for">
+            <select class="search" name="found_type">
+              <option value="4">전체</option>
+              <option value="3">해시태그</option>
+              <option value="2">글 제목</option>
+              <option value="1">글 내용</option>
+            </select>
+            <input
+              class="found"
+              type="search"
+              placeholder="검색어를 입력하세요."
+            />
+            <img src="../img/search.png" class="img_found" />
           </div>
-          <div class="nextbtn">
-            <p>다음</p>
+          <div class="nextbotton">
+            <input id="nextbtn" type="button" value="다음" />
             <div class="arrow"></div>
           </div>
         </section>
