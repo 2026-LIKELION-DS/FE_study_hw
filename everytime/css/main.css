@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Apple SD Gothic Neo", "맑은 고딕", "돋움", sans-serif;
+}
+
+.logo_header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo_header > img {
+    width: 40px;
+    height: 40px;
+}
+
+.text_header {
+    display: flex;
+    flex-direction: column;
+}
+
+.et_name { /*이거 안먹음 -> 해결함. <p> 안에 <p> 쓰지 말기!*/
+    margin: 0;
+    color: #ff1900;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.school_name{ /*얘도 안먹음 -> 마찬가지*/
+    margin: 0;
+    color: #121212;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.top_header{
+    margin: 25px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list_of_service{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.now_on_service{
+    color: #ff1900;
+    font-weight: bold;
+}
+
+.chat_and_profile{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.chat_and_profile > img {
+    border: 1px;
+    border-color: #121212;
+}
+
+.list_of_board{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+
+.basic_board{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    height: 247.5;
+}
+
+.futhermore {
+    color: #ff1900;
+    font-weight: bold;
+}
+
+.header_for_sb_category {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.showing_hot_post {
+    display: flex;
+    background-color: rgba(255, 209, 209, 20);
+}
+
+.showing_hot_post > img {
+    width: 24px;
+    height: 24px;
+    padding: 8px;
+}
+
+.hot_post_lucky{
+    padding: 8px;
+}
+
+.hot_post_thumbsup {
+    display: flex;
+    align-items: center;
+}
+
+.hot_post_thumbsup > img {
+    width: 11px;
+    height: 11px;
+    margin: 0px 3px 0px 9px;
+}
+
+.writing_new_post {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(224, 224, 224);
+}
+
+.writing_new_post > img {
+    width: 40px;
+    height: 40px;
+}
+
+.main_part {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.big_box_for_aside {
+    display:flex;
+    flex-direction: column;
+}
+
+.title_now_hot, .title_hot_post {
+    color: #056AB5;
+    font-size: 20px;
+    font-weight: bold;
+    gap: 0px 0px 8px 0px;
+}
+
+.how_hot_no1, .how_hot_no2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.now_hot_no1_footer, .now_hot_no2_footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    padding: 5px 0px;
+}
+
+.how_hot_no1, .how_hot_no2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.thumbs_up_no1, .comments_no1, .thumbs_up_no2, .comments_no2 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.thumbs_up_no1 > img, .comments_no1 > img, .thumbs_up_no2 > img, .comments_no2 > img {
+    width: 11px;
+    height: 11px;
+}
+
+.thumbs_up_no1 > p, .comments_no1 > p, .thumbs_up_no2 > p, .comments_no2 > p {
+    font-size: 13px;
+    margin: 0;
+}
+
+.hot_post_fst, .hot_post_snd, .hot_post_trd, .hot_post_fth {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.article1, .article2, .article3 {
+    margin: 20px;
+}
+
+.title1, .title2, .title3 {
+    font-weight: bold;
+}
+
+.footer1, .footer2, .footer3 {
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+.content1, .content2, .content3 {
+    font-size: 15px;
+}
+
+.now_hot_no1_title, .now_hot_no2_title {
+    font-weight: bold;
+    margin: 3px 0px 5px 0px;
+}
+
+.now_hot_no1_content, .now_hot_no2_content {
+    font-size: 15px;
+}
+
+.now_hot_no1_footer, .now_hot_no2_footer{
+    font-size: 12px;
+}
+
+.hot_post_list {
+    justify-content: space-between;
+}
