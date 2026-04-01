@@ -1,0 +1,102 @@
+.sectionTilte{
+
+
+}
+.section1_title{
+    font-size:20px;
+    border:1px solid rgb(221, 221, 221);
+    padding:15px;
+    margin:10px 0;
+}
+
+.sectionContent{
+    border:1px solid rgb(217, 217, 217);
+    padding:15px;
+}
+.writer{
+    display:flex;
+}
+.writerImg{
+    border-radius: 5px;
+    padding: 0 10px 10px 0;
+}
+.writerAbout{
+    display: flex;
+    flex-direction: column;
+}
+.writername{
+    font-size:13px;
+    padding:0;
+    margin:0;
+}
+.writeTime{
+    padding:0;
+    margin:0;
+    font-size:8px;
+    color:rgb(212, 212, 212);
+}
+
+.contentTitle{
+    font-weight: 600;
+}
+.sectionContent2{
+    font-size:10px;
+}
+.redTxt{
+    color:Red;
+    font-size:10px
+}
+.blueTxt{
+    color:rgb(154, 219, 223);
+    font-size:10px;
+}
+.yellowTxt{
+    color:rgb(253, 235, 164);
+    font-size:10px;
+}
+.reactionButton{
+    display:flex;
+
+}
+.grayTxt{
+    color:rgb(8, 8, 8);
+    font-size:10px;
+}
+.reaction_button1{
+    background-color: rgb(233, 233, 233);
+    border-radius: 6px;
+    margin:2px;
+    padding:2px 7px;
+}
+.reaction_button2{
+    background-color: rgb(233, 233, 233);
+    margin:2px;
+    padding:2px 7px;
+    border-radius: 6px;
+}
+.comentBox{
+    font-size: 12px;
+    padding:5px;
+    margin:0;
+    background-color: rgb(240, 240, 240);
+    color:gray;
+}
+
+
+
+.textList{
+    display:flex;
+    align-items: center;
+    border:1px solid red;
+    border-radius: 3px;
+    width:fit-content; 
+    font-size:12px;
+    padding:5px 10px;
+    margin:10px 0 0 0;
+}
+
+.textlist_style{
+    color:red;
+    padding-left:5px;
+    margin:0;
+}
