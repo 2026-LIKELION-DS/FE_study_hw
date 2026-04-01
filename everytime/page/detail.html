@@ -1,0 +1,57 @@
+<!--에브리타임 글 상세페이지 클론코딩-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글 상세페이지</title>
+    <link rel="stylesheet" href="../css/detail.css">
+</head>
+<body>
+    <div class="board_container">
+        <header class="board_header">
+            <h1>비밀게시판</h1>
+        </header>
+
+        <article class="post_detail">
+            <div class="post_info">
+                <img src="../img/anonymous.profile.png" alt="프로필"/>
+                <div class="profile_info">
+                    <p class="nickname">익명</p>
+                    <p class="time">방금</p>
+                </div>
+                <div class="post_top">
+                    <p>쪽지</p>
+                    <p>신고</p>
+                </div>
+            </div>  
+
+            <div class="content">
+                <h2 class="title">기숙사나 인대 라운지 열람실 등 오늘 학교에서 밤새는 사람 있니................</h2>
+                <p class="text">혼자가 아니라고 해줘,,,,,</p>
+            </div>  
+
+            <div class="status">
+                <div><img src="../img/container.articles.vote.png" alt="공감"/><span class="r_text"> 3 </span></div>
+                <div><img src="../img/container.articles.comment.png" alt="댓글"/> <span class="b_text"> 0 </span></div>
+                <div><img src="../img/container.articles.scrap.png" alt="스크랩"/> <span class="y_text"> 1 </span></div>
+            </div>  
+
+            <div class="buttons">
+                <button class="btn"><img src="../img/container.articles.buttons.posvote.png" alt="공감"/> 공감</button>
+                <button class="btn"><img src="../img/container.articles.buttons.scrap.png" alt="스크랩"/>스크랩</button>
+            </div>
+        </article>  
+
+        <div class="input_container">
+            <input type="text" placeholder="댓글을 입력하세요." class="input_text"/>
+            <div class="tools">
+                <p><input type="checkbox" checked> 익명</p>
+                <button class="submit-btn"><img src="../img/container.articles.write.submit.png" alt="글 작성"/></button>
+            </div>
+        </div>  
+
+        <button class="list-btn"><img src="../img/container.articles.pagination.list.png" alt="목록"> 글 목록</button>
+    </div>
+</body>
+</html>

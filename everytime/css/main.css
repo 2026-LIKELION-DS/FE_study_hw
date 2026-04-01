@@ -44,13 +44,20 @@ li {
 
 /*navigation 부분*/
 .nav {
-  margin: 0 auto;
   width: 100%;
-  height: 300px;
+  background-color: #eeeeee;
+  display: flex;
+  padding: 20px;
+}
+
+.navBox {
+  margin: 0 auto;
   display: flex;
   flex-wrap: nowrap;
-  background-color: #eeeeee;
-  justify-content: center;
+  justify-content: flex-start;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 .nav li {
@@ -59,8 +66,10 @@ li {
 
 .line {
   width: 0.7px;
+  min-height: 220px;
   background-color: #dddddd;
-  margin-left: 25px;
+  margin: 10px 25px 0;
+  flex-shrink: 0;
 }
 
 /*section 부분*/
@@ -147,7 +156,6 @@ li {
 }
 
 /*list 부분*/
-
 h2 {
     font-size: 15px;
 }
@@ -182,7 +190,7 @@ h3 {
 }
 
 .board_article {
-  border: 1px solid #dddddd;
+  border-top: 1px solid #dddddd;
   padding: 10px;
 }
 
