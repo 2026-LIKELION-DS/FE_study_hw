@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>에브리타임 비밀게시판 클론 코딩</title>
-    <link rel="stylesheet" href="../css/main.css">
+    <title>에브리타임 글 상세 페이지 & 작성 페이지 클론 코딩</title>
+    <link rel="stylesheet" href="../css/detail.css">
 </head>
 <body>
     <header>
@@ -114,54 +114,48 @@
             <a href="https://everytime.kr/255745" class="board-title">비밀게시판</a>
         </div>
 
-        <div class="board-qandhot-wrap">
-            <div class="board-questions-whole">
-                <img src="../img/icn_mcr_board_question_light.png" alt="질문글 아이콘" class="question-icon">
-                <div class="questions-hot-whole">
-                    <p class="questions-hot-each">포크 면접 결과</p>
-                    <p class="questions-hot-each">학교 헬스장</p>
-                    <p class="questions-hot-each">보건결석</p>
-                    <p class="questions-hot-each">보건실가면 마스크</p>
-                    <p class="questions-hot-each">데이터와친해지기</p>
+        <article class="post">
+            <div class="post-header">
+                <div class="profile-left">
+                    <img src="../img/anonymous.profile.png" alt="익명 프로필 이미지" class="anonymous-image">
+                    <div class="anonymus-info">
+                        <h3 class="anonymous-name">익명</h3>
+                        <span class="post-time">03/31 16:25</span>
+                    </div>
+                </div>
+
+                <div class="message-report">
+                    <p class="send-message">쪽지</p>
+                    <p class="report">신고</p>
                 </div>
             </div>
 
-            <div class="board-hot-whole">
-                <img src="../img/icn_mcr_board_hotarticle_light.png" alt="핫글 아이콘" class="hot-icon">
-                <a href="https://everytime.kr/255745/v/405649125" class="hots-each">
-                    <span class="hot-text">학교 4년동안 다니면서 가장무서웠던것</span>
-                    <img src="../img/container.articles.vote.png" alt="추천 아이콘" class="like-icon">
-                    <span class="vote-count">116</span>
-                </a>
+            <h2 class="post-title">대강의동 들어가는 계단은</h2>
+            <p class="post-content">맨날 보수공사 한다는거 같은데<br>왜 맨날 뽀개지기 직전이지</p>
+
+            <div class="status">
+                <span class="vote-count2"><img src="../img/container.articles.vote.png" alt="공감" class="vote-icon2">1</span>
+                <span class="comment-count2"><img src="../img/container.articles.comment.png" alt="댓글" class="comment-icon2">0</span>
+                <span class="scrap-count2"><img src="../img/container.articles.scrap.png" alt="스크랩" class="scrap-icon2">0</span>
+            </div>
+            <div class="like-scrap">
+                <span class="like"><img src="../img/container.articles.buttons.posvote.png" alt="공감" class="like-icon">공감</span>
+                <span class="scrap"><img src="../img/container.articles.buttons.scrap.png" alt="스크랩" class="scrap-icon">스크랩</span>
+            </div>
+        </article>
+
+        <div class="comments">
+            <input type="text" placeholder="댓글을 입력하세요." class="comment-input">
+            <div class="anonym-submit">
+                <img class="anonym" src="../img/container.articles.write.anonym.png" alt="익명 체크박스 이미지">
+                <img class="submit-btn" src="../img/container.articles.write.submit.png" alt="완료">
             </div>
         </div>
 
-        <div class="post-new-article">
-            <input type="text" placeholder="새 글을 작성해주세요!" class="new-article-input">
-            <img src="../img/container.write.background.png" alt="글쓰기 아이콘" class="write-icon">
+        <div class="pagination">
+            <img src="../img/container.articles.pagination.list.png" alt="글 목록" class="pagination-icon">
+            <span class="post-list">글 목록</span>
         </div>
-
-    <div class="article-list-box">
-        <a href="#" class="article-link">
-            <article class="post-each">
-                <p class="post-title">클린식</p>
-                <p class="post-content">그때 거기 치킨텐더샌디치도 클린식이라면 클린식인가..?</p>
-                <p class="post-info">2분 전 | 익명</p>
-            </article>
-        </a>
-
-        <a href="#" class="article-link">
-            <article class="post-each">
-                <p class="post-title">차미리사관 돌아다닐 때</p>
-                <p class="post-content">제 운동화 탓인지 걸을 때 마다 뭔 징징이 걷는 소리나서 너므 민망하고···</p>
-                <div class="post-meta-whole">
-                    <img src="../img/container.articles.comment.png" alt="댓글 이미지" class="comment-img">
-                    <span class="post-info">4 | 6분전 | 익명</span>
-                </div>
-            </article>
-        </a>
-    </div>
-
     </section>
 
 
