@@ -1,0 +1,49 @@
+.titleBox{
+    height: 30px;
+    padding: 15px;
+    border: 1px solid #888;
+}
+.title{
+    color: #292929;
+    font-size: 22px;
+    font-weight: bold;
+    align-self: center;
+}
+.container{
+    margin-top: 7px;
+    padding: 10px;
+    border: 1px solid #888;
+}
+.profileBox{
+    display: flex;
+    gap: 13px;
+}
+.profileImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+.name{
+    font-weight: 500;
+    font-size: 15px;
+}
+.time{
+    font-size: 13px;
+    color: #888;
+}
+.large{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px;
+}
+.small{
+    font-size: 14px;
+    font-weight: 400;
+    color: #3c3a3a;
+    padding: 5px;
+}
+.catImg{
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+}
