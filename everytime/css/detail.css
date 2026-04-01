@@ -1,0 +1,191 @@
+/*에브리타임 글 상세페이지 클론코딩*/
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.board_container {
+    width: 780px;
+}
+
+/* 헤더 */
+.board_header {
+    border: 1.5px solid #eeeeee;
+    padding: 10px 20px;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.board_header h1 {
+    font-size: 25px;
+    color: #000000;
+}
+
+/*게시글*/
+.post_detail {
+    padding: 20px;
+    border: 1.5px solid #eeeeee;
+}
+
+.post_info {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.post_info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.profile_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.nickname {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.time {
+    font-size: 15px;
+    color: #999999;
+}
+
+.post_top {
+    display: flex;
+    font-size: 13px;
+    color: #999999;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.post_top p {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* 본문 내용 */
+.title {
+    font-size: 21px;
+}
+
+.text {
+    font-size: 15px;
+    color: #444;
+    margin: 15px 0;
+}
+
+/*공감, 댓글, 스크랩 */
+.status {
+    margin-bottom: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.status img{
+    width: 13px;
+    height: 13px;
+}
+.r_text{
+  color: #F91F15;
+}
+.b_text{
+  color: #05BCBC;
+}
+.y_text{
+  color: #FFC900;
+}
+
+/* 공감, 스크랩 버튼 */
+.buttons {
+    display: flex;
+    gap: 10px;
+
+}
+
+.buttons img{
+  width: 16px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.btn {
+    background-color: #f2f2f2;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-size: 13px;
+    color: #555555;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+/* 댓글 입력창 */
+.input_container {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #eeeeee;
+}
+
+.input_text {
+  padding: 5px 10px;
+  border: 0;
+  width: 100%;
+  height: 40px;
+  line-height: 20px;
+  color: #999999;
+  font-size: 15px;
+  background-color: #f8f8f8;
+  display: flex;
+  align-items: center;
+}
+
+.submit-btn {
+    background-color: #F91F15;
+    border: none;
+    width: 50px;
+    height: 100%;
+}
+
+.submit-btn img {
+  width: 30px;
+  height: 30px;
+}
+
+.tools{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+    background-color: #f8f8f8;
+}
+
+/* 목록 버튼 */
+.list-btn {
+    margin-top: 5px;
+    background: white;
+    border: 1.5px solid #F91F15;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #F91F15;
+}
+
+.list-btn img{
+  width: 12px;
+  height: 12px;
+  margin-right: 3px;
+}
