@@ -174,56 +174,215 @@
     margin: 15px;
 }
 
-.showing_hot_post {
-    display: flex;
-    justify-content: flex-start;
-
-    border: 1px solid #d6d6d6;
-    padding: 10px;
-    margin: 15px;
-}
-
-.showing_hot_post > img {
-    width: 24px;
-    height: 24px;
-    padding: 8px;
-}
-
-.hot_post_lucky{
-    padding: 8px;
-}
-
-.hot_post_thumbsup {
-    display: flex;
-    align-items: center;
-}
-
-.hot_post_thumbsup > img {
-    width: 11px;
-    height: 11px;
-    margin: 0px 3px 0px 9px;
-}
-
-.writing_new_post {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-
-    border: 2px solid #d6d6d6;
-    background-color: #eeeeee;
-
-    padding: 10px;
-    margin: 15px;
-}
-
-.writing_new_post > img {
-    width: 40px;
-    height: 40px;
-}
-
 .main_part {
     display: flex;
     justify-content: space-evenly;
+}
+
+.header_for_sb_category {
+    border: 1px solid #e3e3e3;
+    padding: 15px 20px;
+    margin-bottom: 8px;
+    background-color: #fff;
+}
+
+.header_for_sb_category > p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #292929;
+}
+
+.detailed_post {
+    border: 1px solid #e3e3e3;
+    background-color: #fff;
+    padding: 25px;
+    position: relative;
+}
+
+.who_wrote_this {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.who_wrote_this > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.name_tag{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name_tag > .nickname {
+    font-weight: bold;
+    font-size: 14px;
+    color: #292929;
+}
+
+.name_tag > .written_time {
+    font-size: 12px;
+    color: #a6a6a6;
+    margin-top: 2px;
+}
+
+.post_options {
+    display: flex;
+
+    right: 25px;
+    top: 25px;
+
+    gap: 12px;
+}
+
+.post_options div {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color:#a6a6a6;
+}
+
+.post_title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #000;
+}
+
+.post_text {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 25px;
+}
+
+.post_reaction {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.post_reaction div {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.post_reaction img {
+    width: 12px;
+    height: 12px;
+    margin-right: 4px;
+}
+
+.ttabong { 
+    color: #f91f15; 
+}
+
+.thatguel {
+    color: #056ab5; 
+}    
+
+.peogayo {
+    color: #ffcd12; 
+}  
+
+.post_button {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 20px;
+}
+
+.ttabong_button, .scrap_button {
+    display: flex;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+.ttabong_button img, .scrap_button img {
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+}
+
+.ttabong_button div, .scrap_button div {
+    font-size: 12px;
+    font-weight: bold;
+    color: #737373;
+}
+
+
+.leave_comment {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 2px solid #e3e3e3;
+    padding: 4px 4px 4px 15px;
+}
+
+
+.comment_musuri {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.comment_musuri label {
+    font-size: 12px;
+    color: #a6a6a6;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.submit_comment {
+    background-color: #c62917;
+
+    width: 35px;
+    height: 35px;
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit_comment img {
+    width: 20px;
+    height: 20px;
+}
+
+.post_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 85px;
+    height: 35px;
+    border: 1px solid #c62917;
+
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+.post_list img {
+    width: 14px;
+    margin-right: 5px;
+}
+
+.post_list div {
+    font-size: 13px;
+    font-weight: bold;
+    color: #c62917;
 }
 
 .big_box_for_aside {
@@ -372,3 +531,8 @@
     background-color: #f6f6f6;
     margin: 20px 10px;
 }
+
+/*입력창 꽉채우는 방법? / 왜 저거 지금 가로로 정렬 안되는지... 분명 에타로고헤더 만들떄랑 똑같이햇는데...ㅜ*/
+/*아니그리고 어사이드 저거 개밤티 어케해결하지...?*/
+/*nav에 선긋는것도...border를 쓰면되야하는거아냐? 왜 안되지*/
+/*분명히 비밀게시판 << 이거 건들인게 없는데 왜 저렇게 된거지???????*/

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clone - 에브리타임 비밀게시판</title>
+    <title>Clone - 에브리타임 글 상세 페이지</title>
     <link rel="stylesheet" href="../css/main.css" />
 </head>
 
@@ -142,70 +142,73 @@
                 <p>비밀게시판</p>
             </header>
 
-            <header class="showing_hot_post">
-                <img src="../img/icn_mcr_board_hotarticle_light.png" alt="핫게 불">
+            <article class="detailed_post">
+                <div class="who_wrote_this">
+                    <img src="../img/anonymous.profile.png" alt="익명프사">
+                    <div class="name_tag">
+                        <p class="nickname">익명</p>
+                        <p class="written_time">04/01 01:53</p>
+                    </div>
 
-                <div class="hot_post_lucky">
-                    <p>행운 나눔합니다🍀</p>
+                    <div class="post_options">
+                        <div>쪽지</div>
+                        <div>신고</div>
+                    </div>
                 </div>
 
-                <div class="hot_post_thumbsup">
-                    <img src="../img/container.articles.vote.png" alt="따봉">
+                <h2 class="post_title">
+                    학교 또 가야 되는 거
+                </h2>
+                <p class="post_text">
+                    진짜 구라같다... 만우절이라서 더...ㅋ...
+                </p>
 
-                    <p>49</p>
+                <div class="post_reaction">
+                    <div class="ttabong">
+                        <img class="good" src="../img/container.articles.vote.png" alt="따봉">
+                        <div>0</div>
+                    </div>
+                    
+                    <div class="thatguel">
+                        <img class="post_comments" src="../img/container.articles.comment.png" alt="댓글">
+                        <div>0</div>
+                    </div>
+                    
+                    <div class="peogayo">
+                        <img class="scrap" src="../img/container.articles.scrap.png" alt="스크랩">
+                        <div>0</div>
+                    </div>
                 </div>
-            </header>
 
-            <div class="writing_new_post">
-                <form class="newpost_upload">
-                    <input type="text" placeholder="새 글을 작성해주세요!">
-                </form>
+                <div class="post_button">
+                    <div class="ttabong_button">
+                        <img src="../img/container.articles.buttons.posvote.png" alt="따봉버튼">
+                        <div>공감</div>
+                    </div>
 
-                <img src="../img/container.write.background.png" alt="연필">
-            </div>
+                    <div class="scrap_button">
+                        <img src="../img/container.articles.buttons.scrap.png" alt="스크랩버튼">
+                        <div>스크랩</div>
+                    </div>
+                </div>
 
-            <article class="showing_articles_in_one_page">
-                <article class="article1">
-                    <p class="title1">
-                        봄만되면 렌즈 개지랄남
-                    </p>
+                <div class="leave_comment">
+                    <input type="text" placeholder="댓글을 입력하세요.">
+                    <div class="comment_musuri">
+                        <label>
+                            <input type="checkbox" checked> 익명
+                        </label>
 
-                    <p class="content1">
-                        원래 한달짜리 렌즈 사면 적어도 3주는 끼는데 이맘때는 이틀만 써도 눈 개뻑뻑하고 가렵고 지랄남 아오... 진짜 눈 불편한거만큼 개가튼게 없는데
-                    </p>
+                        <button class="submit_comment">
+                            <img src="../img/container.articles.write.submit.png" alt="연필">
+                        </button>
+                    </div>
+                </div>
 
-                    <p class="footer1">
-                        방금 | 익명
-                    </p>
-                </article>
-
-                <article class="article2">
-                    <p class="title2">
-                        (코르셋주의?) 향수 관련
-                    </p>
-
-                    <p class="content2">
-                        .<br/>...<br/>.
-                    </p>
-
-                    <p class="footer2">
-                        7분 전 | 익명                    
-                    </p>
-                </article>
-
-                <article class="article3">
-                    <p class="title3">
-                        친구들이랑 여행관련 고민
-                    </p>
-
-                    <p class="content3">
-                        .애들이랑 방학때 해외가려고 여행지 고르는 중인데<br/>A는 예산이 크게 들지 않았음 좋겠대...
-                    </p>
-
-                    <p class="footer3">
-                        13분 전 | 익명
-                    </p>
-                </article>
+                <div class="post_list">
+                    <img src="../img/container.articles.pagination.list" alt="목록">
+                    <div>글 목록</div>
+                </div>
             </article>
         </section>
 

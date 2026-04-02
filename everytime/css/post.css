@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+
+    display: flex;
+    justify-content: center;
+}
+
+.writing_zone {
+    width: 780px;
+    background-color: #ffffff;
+    border: 1px solid #e3e3e3;
+}
+
+.title {
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #a6a6a6;
+}
+
+.main_content {
+    padding: 20px;
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.bottom_option {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    height: 50px;
+    border-top: 1px solid #f2f2f2;
+}
+
+.bottom_option div {
+    display: flex;
+    align-items: center;
+}
+
+.sharp, .clip {
+    margin-right: 15px;
+}
+
+.bottom_option img {
+    height: 24px;
+    width: auto;
+}
+
+.checkcheck, .anonymous {
+    margin-left: 15px;
+}
+
+.checkbox_text, .anonymous_text {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 5px;
+    color: #444;
+}
+
+.submit {
+    margin-left: auto;
+}
+
+.submit img {
+    height: 40px;
+}
+
+#question_noti {
+    display: none;
+    background-color: #f2fcfc;
+    border: 1px solid #d1eeee;
+    margin: 10px 15px 15px 15px;
+    border-radius: 8px;
+    padding: 12px 15px;
+}
+
+#question_noti p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #0ca5af;
+}
+
+#question_noti strong {
+    font-weight: bold;
+}
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
