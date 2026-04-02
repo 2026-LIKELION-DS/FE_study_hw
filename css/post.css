@@ -53,7 +53,6 @@ textarea:focus {
 }
 .wrightButton > img{
     background-color: red;
-    height:54.5px;
 }
 .textfunction li:nth-child(3) {
     margin-left: auto;
@@ -79,3 +78,4 @@ textarea:focus {
     background-color: #EDFFFE;
     width:100%;
 }
+
