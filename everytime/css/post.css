@@ -34,7 +34,7 @@ body {
     font-weight: bold;
 }
 
-header {
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -224,7 +224,7 @@ header {
     border: none;
     background-color: transparent;
     font-size: 14px;
-    outline: none;
+    outline: none; /* 이 속성 주면 input 클릭 시 자동으로 외곽선 생김 방지 */
     color: #a6a6a6;
 }
 
@@ -415,6 +415,7 @@ header {
     color: #292929;
     font-size: 16px;
     font-weight: bold;
+    outline: none;
 }
 
 .content {
@@ -426,6 +427,7 @@ header {
     margin: 0;
     color: #292929;
     font-size: 14px;
+    resize: none; /* textarea는 이 설정을 줘야 웹에서 크기 조절 불가능하게 막을 수 있음 */
 }
 
 .question {
@@ -434,6 +436,7 @@ header {
     display: block;
     align-items: center;
     border: 1px solid #e3e3e3;
+    display: none; /* 이것을 적용해줘야 처음부터 나오지 않고, 질문 체크박스 클릭 시에만 나옴 */
 }
 .question-notice {
     background-color: #edfffe;
