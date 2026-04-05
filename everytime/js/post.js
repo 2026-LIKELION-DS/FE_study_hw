@@ -1,8 +1,7 @@
 function toggleQuestion(checkbox) {
-    let messageBox = document.querySelector(".question-notice");
-    let messageText = document.querySelector(".question-text");
-    let questionCheck = document.querySelector(".question-check");
-    let checkText = document.querySelector(".check-text");
+    /* .question-notice 대신 .question으로 선택해줘야 파란 박스만이 아닌 영역 전체 사라짐! */
+    let messageBox = document.querySelector(".question");
+    let messageText = document.querySelector(".check-text");
 
     if (checkbox.checked === true) {
         messageBox.style.display = "block";

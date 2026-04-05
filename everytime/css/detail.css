@@ -253,12 +253,6 @@ header {
     border-bottom: none;
 }
 
-.post-title {
-    font-weight: bold;
-    margin: 0 0 5px 0;
-    font-size: 14px;
-}
-
 .post-content {
     margin: 0 0 10px 0;
     font-size: 13px;
@@ -409,8 +403,8 @@ header {
 .post-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+    align-items: flex-start; /* center 대신 flex-start 으로 위쪽 정렬*/
 }
 
 .profile-left {
@@ -458,7 +452,7 @@ header {
 }
 
 .post-title {
-    margin-bottom: 15px;
+    margin: 0 0 15px;
     color: #292929;
     font-size: 22px;
     font-weight: bold;
@@ -473,6 +467,7 @@ header {
 .status {
     display: flex;
     align-items: center;
+    font-size: 12px;
 }
 
 .comment-count2, .scrap-count2 {
@@ -489,16 +484,13 @@ header {
     padding: 0 2px 0 0;
     margin-left: 0;
     margin-right: 8px;
+    color: #F91F15;
 }
 
 .vote-icon2, .comment-icon2, .scrap-icon2 {
     width: 12px; /* w/h를 실제 크기인 20px로 하면 너무 커보이는 문제 발생 */
     height: 12px;
     margin-right: 4px;
-}
-
-.vote-count2 {
-    color: #F91F15;
 }
 
 .comment-count2 {
@@ -529,6 +521,8 @@ header {
     background-color: #f9f9f9;
     width: 58px;
     height: 30px;
+    gap: 4px;
+    cursor: pointer;
 }
 
 .like-icon, .scrap-icon {
@@ -554,6 +548,7 @@ header {
     background-color: transparent;
     color: #262626;
     font-size: 13px;
+    outline: none;
 }
 
 .anonym-submit {
@@ -580,8 +575,10 @@ header {
     border-radius: 3px;
     padding: 8px 12px;
     margin: 5px 0 0 5px;
-    padding: 0 10px 0 25px;
+    padding: 0 10px 0 10px;
     height: 35px;
+    background-size: 10px 10px;
+    gap: 4px;
 }
 
 .pagination-icon {
