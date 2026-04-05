@@ -1,34 +1,17 @@
 /*에브리타임 글 상세페이지 클론코딩*/
 *{
-  margin: 0;
-  padding: 0;
-}
-
-body {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
+    font-family: "Apple SD Gothic Neo", "맑은 고딕", "돋움", sans-serif;
 }
 
 .board_container {
     width: 780px;
 }
 
-/* 헤더 */
-.board_header {
-    border: 1.5px solid #eeeeee;
-    padding: 10px 20px;
-    font-size: 25px;
-    margin-bottom: 10px;
-}
-
-.board_header h1 {
-    font-size: 25px;
-    color: #000000;
-}
-
 /*게시글*/
 .post_detail {
+    margin-top: 5px;
     padding: 20px;
     border: 1.5px solid #eeeeee;
 }
@@ -97,14 +80,16 @@ body {
 .status img{
     width: 13px;
     height: 13px;
+    margin-right: 5px;
 }
-.r_text{
+
+.like_num{
   color: #F91F15;
 }
-.b_text{
+.comment_num{
   color: #05BCBC;
 }
-.y_text{
+.scrap_num{
   color: #FFC900;
 }
 
@@ -112,22 +97,22 @@ body {
 .buttons {
     display: flex;
     gap: 10px;
-
 }
 
 .buttons img{
-  width: 16px;
-  height: 15px;
-  margin-right: 5px;
+    width: 16px;
+    height: 15px;
+    margin-right: 5px;
 }
 
-.btn {
+.like_btn,
+.scrap_btn {
     background-color: #f2f2f2;
     border: none;
     padding: 8px 15px;
     border-radius: 8px;
     font-size: 13px;
-    color: #555555;
+    color: #999999;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -136,33 +121,25 @@ body {
 /* 댓글 입력창 */
 .input_container {
   display: flex;
+  height: 40px;
   justify-content: space-between;
   border: 1px solid #eeeeee;
+  align-items: center;
+  background-color: #f8f8f8;
 }
 
 .input_text {
   padding: 5px 10px;
-  border: 0;
+  border: none;
+  outline: none;
   width: 100%;
-  height: 40px;
+  height: 100%;
   line-height: 20px;
   color: #999999;
   font-size: 15px;
-  background-color: #f8f8f8;
   display: flex;
   align-items: center;
-}
-
-.submit-btn {
-    background-color: #F91F15;
-    border: none;
-    width: 50px;
-    height: 100%;
-}
-
-.submit-btn img {
-  width: 30px;
-  height: 30px;
+  background-color: #f8f8f8;
 }
 
 .tools{
@@ -170,7 +147,8 @@ body {
     align-items: center;
     gap: 8px;
     white-space: nowrap;
-    background-color: #f8f8f8;
+    background-color: transparent;
+    height: 50px;
 }
 
 /* 목록 버튼 */
