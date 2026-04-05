@@ -1,4 +1,4 @@
-const button = document.getElementById("question");
+const button = document.getElementById("questionButton");
 
 let clicked = true;
 
@@ -10,6 +10,8 @@ button.addEventListener("click", function () {
   }
   clicked = !clicked;
 });
+
+
 
 const who = document.getElementById("who");
 
@@ -25,7 +27,7 @@ who.addEventListener("click", function () {
 });
 
 
-const questionButton= document.getElementById("question");
+const questionButton= document.getElementById("questionButton");
 
 questionButton.addEventListener("click", function() {
   if(questionContainer.style.display === "block"){
@@ -35,23 +37,16 @@ questionButton.addEventListener("click", function() {
   }
 });
 
-// const questionButton= document.getElementById("question");
+const admitButton= document.getElementById("sectionPencil");
+const postContainer=document.getElementById("postContainer");
+const sectionBox2=document.getElementById("sectionBox2")
 
-// questionButton.addEventListener("click", function() {
-//   if(questionContainer.style.display === "none"){
-//     //questionContainer.style.display="block";
-//   } else{
-//     //questionContainer.style.display="none";
-//     questionContainer.style.display="block";
-//   }
-// });
-
-// const admitButton=document.getElementById("sectionPencil");
-
-// admitButton.addEventListener("click",function() {
-//   if(admitBox.style.display === "block"){
-//     admitBox.style.display === "none";
-//   } else{
-//     admitBox.style.display === "block";
-//   }
-// });
+admitButton.addEventListener("click", function() {
+  if(postContainer.style.display === "none" || postContainer.style.display === ""){
+    postContainer.style.display="block";
+    sectionBox2.style.display="none"
+  } else{
+    postContainer.style.display="none";
+    sectionBox2.style.display="block"
+  }
+});

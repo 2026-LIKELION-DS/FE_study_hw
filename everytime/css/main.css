@@ -1,7 +1,7 @@
 header {
   height: 90px;
   justify-content: space-between;
-  align-items: center;
+  /* aign-items: center; */
   display: flex;
 }
 /*.logo{
@@ -15,16 +15,22 @@ header {
     margin: 24px;
 }*/
 .top-menu {
+  display: flex;
+  
   width: 550px;
   margin-right: 150px;
   height: 80px;
   white-space: nowrap;
+  gap: 150px;
 }
 #menu {
   display: flex;
+  gap: 10px;
+  margin-left: 100px;
   /* margin-left: -50px; */
 }
 .menu1-0{
+  height: 30px;
   font-size: 17px;
   font-weight: bold;
   color: #F91F15;
@@ -45,8 +51,8 @@ header {
   width: 142px;
   height: 60px;
   margin-top: 10px;
-  margin-left: 300px;
   display: flex;
+  padding-left: 130px;
 }
 #logo-img img {
   margin-top: 5px;
@@ -71,22 +77,28 @@ header {
 .icon {
   display: flex;
   width: 90px;
-  height: 40px;
-  margin-right: 250px;
   padding: 20px 0px;
+  gap: 5px;
+  padding-left: 60px;
 }
-#icon-message {
+/* #icon-message {
   width: 50px;
   height: 40px;
-  margin: 0px 0px 0px 4px;
-  background-image: url("../img/icon_communication_chat_filled_gray500_light.svg");
+  margin: 0px 0px 0px 4px;;
   background-size: 24px 24px;
   background-repeat: no-repeat;
   background-position: center;
   border: 1px solid #d6d6d6;
   border-radius: 12px;
+} */
+.messageImg{
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  border:1px solid #d6d6d6;
+  border-radius: 12px;
 }
-#icon-my {
+/* #icon-my {
   width: 50px;
   height: 40px;
   margin: 0px 0px 0px 4px;
@@ -95,6 +107,13 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   border: 1px solid #d6d6d6;
+  border-radius: 12px;
+} */
+.personImg{
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  border:1px solid #d6d6d6;
   border-radius: 12px;
 }
 nav {
@@ -241,20 +260,30 @@ section {
   display: flex;
   gap: 5px;
 }
-.question-icon{
+/* .question-icon{
   background-image: url('../img/icn_mcr_board_question_light.png');
   width: 24px;
   height: 24px;
   background-size: contain;
   margin-top: 10px;
   margin-right: 10px;
+} */
+.questionIcon{
+  width: 24px;
+  height: 24px;
+  padding: 8px;
 }
-#hot-icon{
+/* #hot-icon{
   background-image: url('../img/icn_mcr_board_hotarticle_light.png');
   width: 24px;
   height: 24px;
   background-size: contain;
   margin-top: 10px;
+} */
+.hotImg{
+  width: 24px;
+  height: 24px;
+  padding: 8px;
 }
 #item1 {
   padding: 12px;
@@ -295,8 +324,7 @@ section {
   width: 24px;
   height: 24px;
 }
-#hot-item {
-  margin-left: 13px;
+/* #hot-item {
   padding: 12px;
   width: 85px;
   height: 20px;
@@ -304,21 +332,52 @@ section {
   color: #666666;
   font-size: 12px;
   border-radius: 15px;
+} */
+.hot-container{
+  display: flex;
 }
-#hot-good{
+.hotBox{
+  display: flex;
+  padding: 10px;
+  background-color: #f3c6c456;
+  border-radius: 15px;
+  gap: 3px;
+}
+.hot-goodIcon{
+  display: flex;
+  gap: 3px;
+  height: 12px;
+  padding: 6px;
+}
+#hot-item{
+  color: #666666;
+  font-size: 12px;
+  align-self: center;
+}
+/* #hot-good{
   background-image: url('../img/container.articles.vote.png');
   width: 11px;
   height: 11px;
   background-size: contain;
   margin-top: 17px;
   margin-left: -35px;
+} */
+.hotGood{
+  width: 12px;
+  height: 12px;
+  
 }
-.hot-textt{
+/* .hot-textt{
   line-height: 11px;
   color: #F91F15;
   font-size: 11px;
   margin-top: 16px;
   margin-left: 3px;
+} */
+.hot-textt{
+  color: #F91F15;
+  font-size: 11px;
+  
 }
 /*.section-box2{
   display: block;
@@ -335,21 +394,28 @@ section {
   background-size: 40px 40px;
 }*/
 
-.section-box2 {
+#sectionBox2 {
   /*margin: 0px 0px 5px;
   padding: 15px 20px;
   width: 781.33px;*/
-  display: block;
+  display:flex;
   margin-bottom: 5px;
-  padding: 0 10px;
+  /* padding: 0 10px; */
+  padding-left: 10px;
   height: 50px;
   line-height: 46px;
   color: #a6a6a6;
   border: 2px solid #d6d6d6;
   font-size: 15px;
   box-sizing: border-box;
-  background: #F9F9F9 url(../img/container.write.background.png) no-repeat right center;
-  background-size: 40px 40px;
+  background: #F9F9F9;
+  justify-content:space-between;
+  /* url(../img/container.write.background.png) no-repeat right center
+  background-size: 40px 40px; */
+  /* display: none; */
+}
+#sectionPencil{
+  cursor: pointer;
 }
 aside {
   width: 323px;
@@ -366,14 +432,15 @@ aside {
 .iconn{
   display: flex;
 }
-.iconn1{
+/* .iconn1{
   display: flex;
   height: 10px;
 }
 .iconn1 ul{
   margin:0;
-}
-.good{
+} */
+
+/* .good{
   float: left;
   margin-left: -3px;
   margin-top: -9px;
@@ -387,8 +454,25 @@ aside {
   background-size: 11px 11px;
   background-position: left center;
   padding-left: 15px;
+} */
+.iconnBox{
+  display: flex;
+  gap: 5px;
 }
-.talk{
+.good{
+  display: flex;
+  gap: 4px;
+}
+.voteImg{
+  width: 12px;
+  height: 12px;
+  padding-top: 2px;
+}
+.goodText{
+  font-size: 12px;
+  color: #F91F15;
+}
+/* .talk{
   float: left;
   margin-left: 9px;
   margin-top: -9px;
@@ -401,8 +485,8 @@ aside {
   background-size: 11px 11px;
   background-position: left center;
   padding-left: 15px;
-}
-.talk2{
+} */
+/* .talk2{
   margin-left: 9px;
   margin-top: -9px;
   height: 14px;
@@ -414,8 +498,21 @@ aside {
   background-size: 11px 11px;
   background-position: left center;
   padding-left: 15px;
+} */
+.talkBox{
+  display: flex;
+  gap: 4px;
 }
-#aside-box1-1 h4{
+.talktalk{
+  width: 12px;
+  height: 12px;
+  padding-top: 2px;
+}
+.talkText{
+  font-size: 12px;
+  color: #05BCBC;
+}
+.iconnBox h4{
   margin: 0;
   color: #a6a6a6;
   font-size: 11px;
@@ -699,4 +796,7 @@ span.on{
 } */
 .footer-text{
   font-weight: bold
+}
+#postContainer{
+  display: none;
 }
