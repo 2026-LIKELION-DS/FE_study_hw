@@ -52,7 +52,7 @@ textarea:focus {
     padding:15px;
 }
 .wrightButton > img{
-    background-color: red;;
+    background-color: red;
 }
 .textfunction li:nth-child(3) {
     margin-left: auto;
@@ -62,6 +62,7 @@ textarea:focus {
 }
 .wrightButton{
     padding-bottom: 0;
+    height:54px;
 }
 .questionContainer{
     display: none;
@@ -77,3 +78,4 @@ textarea:focus {
     background-color: #EDFFFE;
     width:100%;
 }
+

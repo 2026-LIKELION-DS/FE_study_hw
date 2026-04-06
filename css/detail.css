@@ -1,3 +1,13 @@
+.bodyBox{
+    margin: 0 auto 25px auto;
+    padding:25px;
+    gap:10px;
+}
+
+section {
+    width: 780px;
+}
+
 .sectionTilte{
 
 
@@ -11,7 +21,12 @@
 
 .sectionContent{
     border:1px solid rgb(217, 217, 217);
-    padding:15px;
+    padding:0 10px 10px 10px;
+}
+.sectionFirst{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .writer{
     display:flex;
@@ -20,69 +35,119 @@
     border-radius: 5px;
     padding: 0 10px 10px 0;
 }
+.writerImg > img{
+    border-radius: 5px;
+}
 .writerAbout{
     display: flex;
     flex-direction: column;
 }
 .writername{
-    font-size:13px;
+    font-size:14px;
+    font-weight: 500;
     padding:0;
     margin:0;
 }
 .writeTime{
     padding:0;
     margin:0;
-    font-size:8px;
+    font-size:10px;
     color:rgb(212, 212, 212);
+}
+.writeButton{
+    display: flex;
+    align-items: flex-start;
+    height:40px;
+    background-color: red;
+}
+.wright img{
+    display: flex;
+}
+.writerRight ul{
+    display: flex;
+}
+.sectionRight-menu{
+    font-size: 13px;
+    padding:7px;
+    color:rgb(155, 154, 154);
 }
 
 .contentTitle{
+    font-size:25px;
     font-weight: 600;
+    margin:0 0 10px 0;
 }
+
+
 .sectionContent2{
-    font-size:10px;
+    font-size:15px;
+    margin:0 0 10px;
 }
 .redTxt{
     color:Red;
-    font-size:10px
+    font-size:13px
 }
 .blueTxt{
     color:rgb(154, 219, 223);
-    font-size:10px;
+    font-size:13px;
 }
 .yellowTxt{
     color:rgb(253, 235, 164);
-    font-size:10px;
+    font-size:13px;
 }
+.grayTxt, .grayTxt1{
+    color:rgb(101, 100, 100);
+    font-size:13px;
+}
+
+.reaction{
+    margin:0 0 10px 0;
+}
+
 .reactionButton{
     display:flex;
+}
 
-}
-.grayTxt{
-    color:rgb(8, 8, 8);
-    font-size:10px;
-}
-.reaction_button1{
-    background-color: rgb(233, 233, 233);
+.reaction_button1, .reaction_button2{
+    background-color: rgb(245, 244, 244);
     border-radius: 6px;
     margin:2px;
-    padding:2px 7px;
+    padding:2px 9px 5px 9px;
+    cursor:pointer;
 }
-.reaction_button2{
-    background-color: rgb(233, 233, 233);
-    margin:2px;
-    padding:2px 7px;
-    border-radius: 6px;
-}
-.comentBox{
-    font-size: 12px;
-    padding:5px;
+.comentContainer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
     margin:0;
-    background-color: rgb(240, 240, 240);
-    color:gray;
+    width:100%;
+    height:40px;
+    border:1px solid rgb(217, 217, 217);
+    background-color: rgb(245, 244, 244);
 }
-
-
+.comentbox{
+    font-size: 15px;
+    padding:0px;
+    margin:0;
+    background-color: rgb(245, 244, 244);
+    border:0;
+    color:gray;
+    width:100%;
+}
+.textfunction{
+    align-items: flex-start;
+}
+.check-coment{
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    margin: 0 10px 0 0;
+}
+.anonymousBox{
+    margin: 0 5px 0 0;
+    height:40px;
+}
 
 .textList{
     display:flex;
@@ -99,4 +164,8 @@
     color:red;
     padding-left:5px;
     margin:0;
+}
+
+.asideBox{
+    margin:10px;
 }
