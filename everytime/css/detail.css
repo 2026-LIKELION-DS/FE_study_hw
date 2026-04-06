@@ -153,3 +153,28 @@
 .btn-list img {
   display: flex;
 }
+.post-buttons {
+  display: flex;
+  gap: 5px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+
+  .btn-action {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 12px;
+    background: #f9f9f9;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    color: #a6a6a6;
+    font-weight: bold;
+  }
+
+  .btn-action img {
+    width: 12px;
+    height: 12px;
+  }
+}

@@ -100,17 +100,26 @@
           </p>
 
           <div class="post-stats">
-            <span class="stat-like"
-              ><img src="../img/빨간 좋아요.png" alt="좋아요" /> 0</span
-            >
+            <span class="stat-like">
+              <img src="../img/빨간 좋아요.png" alt="좋아요" />
+              <span id="like-count">0</span>
+            </span>
             <span class="stat-comment"
               ><img src="../img/초록 채팅.png" alt="댓글" /> 0</span
             >
-            <span class="stat-scrap"
-              ><img src="../img/에타 별.png" alt="댓글" /> 0</span
-            >
+            <span class="stat-scrap">
+              <img src="../img/에타 별.png" alt="스크랩" />
+              <span id="scrap-count">0</span>
+            </span>
           </div>
-
+          <div class="post-buttons">
+            <button class="btn-action" id="btn-like">
+              <img src="../img/공감.png" alt="공감" /> 공감
+            </button>
+            <button class="btn-action" id="btn-scrap">
+              <img src="../img/스크랩.png" alt="스크랩" /> 스크랩
+            </button>
+          </div>
           <div class="comment-input-area">
             <input type="text" placeholder="댓글을 입력하세요." />
             <button class="btn-submit">
@@ -266,6 +275,6 @@
       </aside>
     </main>
 
-    <script src="../JS/post.js"></script>
+    <script src="../JS/detail.js"></script>
   </body>
 </html>
