@@ -68,7 +68,8 @@ textarea {
   background-size: contain;
   background-position: center;
 }
-.right-g > div {
+.right-g > div,
+.right-g > button {
   width: 40px;
   height: 40px;
 
@@ -96,6 +97,7 @@ textarea {
   background-image: url("../img/container.articles.write.question.active.png");
 }
 .submit {
+  border: none;
   background-image: url("../img/container.articles.write.submit.png");
   background-color: #f91f15;
 }
@@ -104,4 +106,9 @@ textarea {
 .right-g {
   display: flex;
   gap: 10px;
+}
+
+.title,
+textarea {
+  outline: none;
 }

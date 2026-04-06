@@ -249,6 +249,8 @@ h4 {
 }
 
 .pen {
+  display: block;
+
   background-image: url("../img/container.write.background.png");
   background-size: contain;
   margin-left: auto;
@@ -295,6 +297,7 @@ span {
   font-size: 13px;
 }
 
+/* 좋아요, 채팅 이모티콘 */
 .time1 {
   display: flex;
   align-items: center;
@@ -446,6 +449,15 @@ h4 {
   border: none;
 }
 
+.img_found {
+  width: 17px;
+  height: 17px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 10px;
+  margin-left: auto;
+}
+
 .nextbotton {
   border: 1px solid #f91f15;
   border-radius: 3px;
@@ -464,16 +476,6 @@ h4 {
   outline: none;
   font-size: 14px;
 }
-
-.img_found {
-  width: 17px;
-  height: 17px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin: 10px;
-  margin-left: auto;
-}
-
 .arrow {
   width: 12px;
   height: 12px;
@@ -496,4 +498,8 @@ h4 {
 }
 input {
   font-size: 14px;
+}
+
+.new_write {
+  display: none;
 }
