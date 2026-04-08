@@ -46,6 +46,24 @@ ul {
   display: flex;
   margin: 0 auto;
 }
+.menu li {
+  margin: 0 15px;
+  font-size: 15px;
+  font-weight: bold;
+  list-style: none;
+}
+
+.menu li a {
+  color: black;
+  text-decoration: none;
+}
+
+.active {
+  color: #F91F15 !important;
+  text-decoration: none;
+  padding-bottom: 36px;
+  border-bottom: 4px solid #F91F15;
+}
 
 li {
   margin-right: 15px;
@@ -114,22 +132,22 @@ li {
   height: 100%;
 }
 
-.item {
+.questionItem {
   background-color: #edfffe;
   border-radius: 10px;
   padding: 10px;
-  font-size: 15px;
+  font-size: 12px;
 }
 
-.item2{
+.hotItem {
     background-color: #ffecec;
     border-radius: 10px;
     padding: 10px;
-    font-size: 15px;
+    font-size: 12px;
     display: flex;
 }
 
-.item2 img {
+.hotItem img {
     width: 15px;
     height: 15px;
 }
@@ -140,12 +158,12 @@ li {
   margin: 5px;
 }
 
-.item2_like {
+.hotItem_like {
     display: flex;
     align-items: center;
 }
 
-.item2_like img{
+.hotItem_like img{
     margin: 0 10px;
 }
 
@@ -200,9 +218,11 @@ h2 {
     font-size: 13px;
     color: #cccccc;
 }
-
+.list {
+  border: 1px solid #dddddd;
+}
 .write_group {
-    border: 1.5px solid #eeeeee;
+    border-bottom: 1px solid #dddddd;
     padding: 20px;
 }
 
@@ -339,4 +359,45 @@ footer {
 footer p {
   color: gray;
   font-size: 13px;
+}
+
+
+/* 반응형 페이지 */
+.hamburger, .menu_name {
+  display: none;
+}
+
+@media screen and (max-width: 640px) {
+  .aside, .school_name, .menu, .top_icons, .logo_img, .section h1{
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 7px;
+    margin: 0 5px 0 10px;
+  }
+
+  .menu_name {
+    display: block;
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .questionItem, .hotItem {
+    width: 100%;
+    white-space: nowrap;
+  }
+  
+  .header {
+    padding: 0;
+    margin: 5px;
+    align-items: center;
+  }
+  
+  .section {
+    margin: 0;
+  }
 }

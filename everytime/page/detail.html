@@ -13,12 +13,14 @@
       <header class="header">
         <!--header 부분 -->
         <img src="../img/nav.logo.png" alt="로고" class="logo_img"/>
-        <p>
+        <img src="../img/aside.title.hamburger.png" alt="메뉴" class="hamburger"/>
+        <p class="school_name">
             <span class="font_red">에브리타임</span><br><span style="font-size: 25px">덕성여대</span>
         </p>
+        <p class="menu_name">비밀게시판</p>
         <ul class="menu">
-          <li>게시판</li>
-          <li>시간표</li>
+          <li><a class="active" href="">게시판</a></li>
+          <li><a href="">시간표</a></li>
           <li>강의실</li>
           <li>학점계산기</li>
           <li>친구</li>
@@ -133,7 +135,35 @@
                     <button class="scrap_btn"><img src="../img/container.articles.buttons.scrap.png" alt="스크랩"/>스크랩</button>
                 </div>
             </article>  
-
+            <div class="comment_container">
+    
+              <div class="comment_item">
+                  <div class="comment_header">
+                      <div class="user_info">
+                          <img src="../img/anonymous.profile.png" alt="프로필" class="profile_img">
+                          <span class="nickname">익명1</span>
+                      </div>
+                      <div class="comment_menu">
+                          <span>대댓글</span> <span>공감</span> <span>쪽지</span> <span>신고</span>
+                      </div>
+                  </div>
+                  <p class="comment_text">나나</p>
+                  <span class="comment_time">2분 전</span>
+                  <div class="child_comment">
+                      <div class="comment_header">
+                          <div class="user_info">
+                              <img src="../img/anonymous.profile.png" alt="프로필" class="profile_img">
+                              <span class="nickname">익명2</span>
+                          </div>
+                          <div class="comment_menu">
+                              <span>공감</span> <span>쪽지</span> <span>신고</span>
+                          </div>
+                      </div>
+                      <p class="comment_text">같이 화이팅 해보자!!</p>
+                      <span class="comment_time">2분 전</span>
+                  </div>
+              </div>
+            </div>
             <div class="input_container">
                 <input type="text" class="input_text" placeholder="댓글을 입력하세요." />
                 <div class="tools">

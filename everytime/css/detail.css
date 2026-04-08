@@ -118,6 +118,67 @@
     align-items: center;
 }
 
+.comment_container {
+    width: 100%;
+    border: 1px solid #eeeeee;
+}
+
+.comment_item {
+    padding: 15px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.child_comment {
+    background-color: #f9f9f9;
+    border: 1px solid #eeeeee;
+    border-radius: 4px;
+    margin-top: 10px;
+    padding: 12px;
+}
+
+.comment_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.user_info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.profile_img {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+}
+
+.nickname {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.comment_menu {
+    display: flex;
+    gap: 10px;
+    font-size: 11px;
+    color: #a6a6a6;
+    cursor: pointer;
+}
+
+.comment_text {
+    font-size: 14px;
+    color: #292929;
+    margin-bottom: 5px;
+}
+
+.comment_time {
+    font-size: 11px;
+    color: #a6a6a6;
+}
+
 /* 댓글 입력창 */
 .input_container {
   display: flex;
