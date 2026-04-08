@@ -33,3 +33,45 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+function toggleReplyForm(commentId) {
+  const replyArea = document.getElementById(`reply-area-${commentId}`);
+
+  if (replyArea.innerHTML === "") {
+    const replyHTML = `
+      <div class="reply-item">
+        <div class="comment-header">
+          <div class="user-info">
+            <div class="profile-placeholder"></div>
+            <span class="username author">익명(글쓴이)</span>
+          </div>
+          <div class="comment-actions">
+            <a href="#">공감</a> <a href="#">쪽지</a> <a href="#">신고</a>
+          </div>
+        </div>
+        <div class="comment-content">
+          <input type="text" placeholder="대댓글을 입력하세요..." style="width:80%; border:none; background:transparent; outline:none;">
+          <button style="float:right; border:none; background:#c62917; color:#fff; border-radius:2px; padding:2px 5px; cursor:pointer;">등록</button>
+        </div>
+        <div class="comment-footer"><span class="time">방금 전</span></div>
+      </div>
+    `;
+    replyArea.innerHTML = replyHTML;
+  } else {
+    replyArea.innerHTML = "";
+  }
+}
+document.addEventListener("DOMContentLoaded", function () {
+  const btnSubmit = document.querySelector(".btn-submit");
+  const mainInput = document.getElementById("mainCommentInput");
+
+  btnSubmit.addEventListener("click", function () {
+    const commentValue = mainInput.value;
+
+    if (commentValue.trim() === "") {
+      alert("댓글 내용을 입력해주세요!");
+    } else {
+      alert(commentValue);
+      mainInput.value = "";
+    }
+  });
+});
