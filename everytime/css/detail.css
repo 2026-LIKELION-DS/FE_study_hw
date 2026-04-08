@@ -183,6 +183,7 @@
 
 .secret_board {
     display: flex;
+    flex-direction: column;
 }
 
 .bigBox {
@@ -192,13 +193,13 @@
 }
 
 .detailed_post {
-    width: 100%;
+    width: 94%;
 }
 
 .header_for_sb_category {
     border: 1px solid #e3e3e3;
     padding: 15px 20px;
-    margin-bottom: 8px;
+    margin: 10px 0px;
     background-color: #fff;
 }
 
@@ -327,7 +328,8 @@
     display: flex;
     align-items: center;
     background-color: #f8f8f8;
-    padding: 6px 12px;
+    border: none;
+    padding: 8px 12px;
     border-radius: 4px;
 }
 
@@ -354,6 +356,11 @@
     padding: 4px 4px 4px 15px;
 }
 
+.thatguelChang {
+    width: 100%;
+    border: none;
+    background: none;
+}
 
 .comment_musuri {
     display: flex;
@@ -367,11 +374,12 @@
     display: flex;
     align-items: center;
     gap: 4px;
+    width: 40px;
 }
 
 .submit_comment {
     background-color: #c62917;
-
+    border: none;
     width: 35px;
     height: 35px;
     border-radius: 4px;
@@ -384,6 +392,43 @@
 .submit_comment img {
     width: 20px;
     height: 20px;
+}
+
+.realComments {
+    border: 1px solid #e3e3e3;
+}
+
+.middleBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sideOfComment {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sideOfComment > p {
+    margin: 10px;
+    color: #a6a6a6;
+    font-size: 12px;
+}
+
+.realComments > p {
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.realComments > div {
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #a6a6a6;
 }
 
 .post_list {
@@ -466,6 +511,14 @@
     margin: 0;
 }
 
+.thumbs_up_no1 > p, .thumbs_up_no2 > p {
+    color: #f91f15;
+}
+
+.comments_no1 > p, .comments_no2 > p {
+    color: #056ab5;
+}
+
 .hot_post_fst, .hot_post_snd, .hot_post_trd, .hot_post_fth {
     display: flex;
     align-items: center;
@@ -503,9 +556,8 @@
 .now_hot_list {
     border: 1px solid #e3e3e3;
     background-color: #f6f6f6;
-    margin: 20px 10px;
+    margin: 10px 10px 5px 10px;
     overflow: hidden;
-    width: 300px;
 }
 
 .title_now_hot {
@@ -554,6 +606,74 @@
     display: block;
     border: 1px solid #e3e3e3;
     background-color: #f6f6f6;
-    margin: 20px 10px;
+    margin: 5px 10px;
 }
 
+.best_list {
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #f6f6f6;
+    border: 1px solid #d6d6d6;
+
+    padding: 0px 10px 0px 0px;
+    margin: 5px 0px 10px 9px;
+
+    width: 335px;
+}
+
+.best_list > p{
+    align-content: center;
+    font-size: 10px;
+    color: #cbcaca;
+}
+
+.title_best {
+    display: block;
+    color: #056AB5;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 15px;
+}
+
+.hamburger_menu {
+    display: none;
+}
+
+.hamburger_menu > img {
+    width: 40px;
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 640px) {
+    .big_box_for_aside {
+        display: none;
+    }
+
+    .list_of_board {
+        display: none;
+    }
+
+    .hamburger_menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 24px;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .logo_header, .list_of_service, .chat_and_profile{
+        display: none;
+    }
+
+    .main_part {
+        display: block;
+        width: 100%;
+    }
+    
+    .secret_board {
+        width: 100%;
+        margin: 0;
+    }
+}
