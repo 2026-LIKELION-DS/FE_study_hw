@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인 페이지</title>
+    <link rel="stylesheet" href="../css/login.css" />
+  </head>
+  <body>
+    <div class="everytime-body">
+      <section>
+        <img class="logo" src="../img/logo.png" />
+      </section>
+      <form class="everytime-section">
+        <input class="login-id" type="text" placeholder="아이디" />
+        <input class="login-pw" type="password" placeholder="비밀번호" />
+        <button class="everytime-login" type="button">에브리타임 로그인</button>
+        <div class="everytime-etc">
+          <label class="keep-wrap">
+            <input
+              class="login-keep"
+              type="checkbox"
+              value="로그인 유지"
+            />로그인 유지
+          </label>
+          <a class="idpw-find">아이디/비밀번호 찾기</a>
+        </div>
+        <div>
+          <a class="signup" href="../page/signup.html" target="_blank"
+            >회원가입</a
+          >
+        </div>
+      </form>
+
+      <footer>
+        <label class="everytime-footer">
+          <a>이용약관</a>
+          <a id="foo">개인정보처리방침</a>
+          <a>문의하기</a>
+          <a id="foo">© 에브리타임</a>
+        </label>
+      </footer>
+    </div>
+
+    <script src="../js/login.js"></script>
+  </body>
+</html>

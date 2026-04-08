@@ -6,13 +6,14 @@
   font-family: "Apple SD Gothic Neo";
   box-sizing: border-box;
 }
-
+body {
+  margin: 0;
+}
 header {
   display: flex;
   justify-content: space-between;
-  padding: 0px 150px;
-  border-bottom: 0.1px solid #65656568;
-
+  margin: 0 auto;
+  width: 1180px;
   box-sizing: border-box;
 }
 .logo {
@@ -54,7 +55,7 @@ header {
   font-size: 16px;
   color: black;
   text-decoration-line: none;
-  font-weight: 700;
+  font-weight: 600;
 }
 a:active {
   color: #f91f15;
@@ -97,19 +98,34 @@ a:active {
 
 nav {
   height: 230px;
-  border-bottom: 0.1px solid #65656568;
+  border-top: 0.1px solid rgb(214, 214, 214);
+  border-bottom: 0.1px solid rgb(214, 214, 214);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   background-color: #f2f2f2;
-  padding: 10px auto;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.nav-box {
+  display: flex;
+  align-items: center;
+  width: 1200px;
+  min-width: 1200px;
+  margin: 0 auto;
+  padding-left: 35px;
 }
 
 .divider_box {
   display: flex;
 }
+#nav-box1 {
+  width: 159px;
+  height: 200px;
+}
 .divider {
-  border-left: 0.5px solid rgba(0, 0, 0, 0.176);
+  border-left: 0.5px solid rgba(111, 111, 111, 0.176);
   width: 15px;
   height: 200px;
 }
@@ -137,17 +153,20 @@ nav {
 .container {
   display: flex;
   justify-content: center;
-  align-items: flex;
+  align-items: flex-start;
 
-  padding: 0px auto;
-  margin: 30px 180px;
+  padding: 0;
+  margin: 30px auto;
+
+  width: 1200px;
+  min-width: 1200px;
 }
 
 .container p {
   font-size: 13px;
 }
 
-.aside_wrap {
+.aside-wrap {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -159,6 +178,7 @@ section {
 .secret {
   margin-right: 30px;
   width: 800px;
+  min-width: 800px;
 }
 aside {
   width: 310px;
@@ -502,4 +522,130 @@ input {
 
 .new_write {
   display: none;
+}
+
+.mobile-header {
+  display: none;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* 반응형 */
+@media all and (max-width: 640px) {
+  /*숨긴 pc화면*/
+
+  header {
+    display: none;
+  }
+
+  .aside-wrap {
+    display: none;
+  }
+
+  .secret_board {
+    display: none;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: #e3e3e366;
+  }
+
+  .mobile-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    gap: 15px;
+    padding: 20px;
+  }
+  .header-wrap {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+  .header-wrap div {
+    background: #000;
+    width: 18px;
+    height: 2px;
+  }
+  #mobile-title {
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  .nav-box {
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding-left: 10px;
+  }
+
+  .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    padding: 0;
+    margin: 0;
+
+    width: 100%;
+    min-width: 0;
+  }
+
+  .secret {
+    margin-right: 5px;
+  }
+
+  section,
+  .secret,
+  .new_write,
+  .boxx,
+  .keyword_board,
+  .new_board,
+  .section_end,
+  .secret_board,
+  .art {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .new_board {
+    margin: 5px;
+    width: 100%;
+  }
+
+  .art,
+  .keyword_board {
+    background-color: white;
+  }
+
+  .board1 p {
+  line-height: 2;
+  font-size: 12px;
+  color: #444444;
+  width: 120px;
+  height: 25px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 }
