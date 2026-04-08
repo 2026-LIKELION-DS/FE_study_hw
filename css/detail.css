@@ -3,15 +3,18 @@
     padding:25px;
     gap:10px;
 }
+.hamburgerBar{
+    display:none;
+}
 
 section {
     width: 780px;
 }
-
-.sectionTilte{
-
-
+.sectionComent{
+    display: flex;
+    flex-direction: column;
 }
+
 .section1_title{
     font-size:20px;
     border:1px solid rgb(221, 221, 221);
@@ -21,29 +24,68 @@ section {
 
 .sectionContent{
     border:1px solid rgb(217, 217, 217);
-    padding:0 10px 10px 10px;
+    padding:10px 10px 10px 10px;
 }
 .sectionFirst{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+.coment-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin:0;
+}
+.sectionComment {
+}
+.sectionComment.active{
+    display:flex;
+    flex-direction: column;
+    border:1px solid rgb(217, 217, 217);
+    padding:10px 10px 10px 10px;
+}
+.comentWriter{
+    display: flex;
+    margin:0;
+}
+
+.comentValue{
+    padding-left:5px;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+
 .writer{
     display:flex;
 }
 .writerImg{
     border-radius: 5px;
-    padding: 0 10px 10px 0;
+    padding: 0;
 }
 .writerImg > img{
     border-radius: 5px;
+    display: block;
 }
 .writerAbout{
     display: flex;
     flex-direction: column;
+    padding-left:10px;
+}
+.writerAbout2{
+    display: flex;
+    flex-direction: column;
+    padding-left:5px;
 }
 .writername{
     font-size:14px;
+    font-weight: 500;
+    padding:0;
+    margin:0;
+}
+.writername2{
+    font-size:12px;
     font-weight: 500;
     padding:0;
     margin:0;
@@ -67,8 +109,8 @@ section {
     display: flex;
 }
 .sectionRight-menu{
-    font-size: 13px;
-    padding:7px;
+    font-size: 11px;
+    padding-right:7px;
     color:rgb(155, 154, 154);
 }
 
@@ -168,4 +210,15 @@ section {
 
 .asideBox{
     margin:10px;
+}
+@media (max-width:640px){
+    .hamburgerBar{
+        display: flex;
+    }
+    .sectionTilte{
+        display:none;
+    }
+    aside{
+        display: none;
+    }
 }
