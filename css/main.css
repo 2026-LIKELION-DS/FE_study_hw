@@ -5,7 +5,9 @@
 body, html{
     margin:0;
     padding:0;
-    min-width: 1200px;
+    /* min-width: 1200px; */
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .container {
@@ -15,11 +17,14 @@ body, html{
     display: flex;
     align-items: center; 
     justify-content:space-between;
+    gap:16px;
     background-color: white;
-    width:1200px;
+    width:100%;
+    max-width: 1200px;
     margin: 0 auto;
     box-sizing: border-box;
-    padding: 0;
+    padding: 0;  
+    white-space: nowrap;
 }
 
     
@@ -27,7 +32,8 @@ body, html{
     display: flex;
     justify-content:flex-start;
     align-items:stretch;
-    margin-right: 150px;
+    /* margin-right: 150px; */
+    margin:0;
 }
 
 .container2{
@@ -40,7 +46,8 @@ body, html{
 .container3{
     display:flex;
     justify-content: flex-end;
-    margin-left : 300px;
+    /* margin-left : 300px; */
+    margin:0;
 }
 .container3 img{
     border: 1px solid rgb(198, 191, 191);
@@ -101,7 +108,8 @@ body, html{
     justify-content: center;
     background-color: rgb(240, 240, 240);
     border:1px solid rgb(206, 204, 204);
-    padding:0 50px;
+    padding:0 16px;
+    flex-wrap: nowrap;
     font-size: 13px;
 }
 
@@ -109,7 +117,8 @@ body, html{
     display: block;
     padding:0 0 3px 0;
     font-weight: 1px;
-    width: 120px;
+    width: auto;
+    min-width:0;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -138,8 +147,11 @@ h3{
 .bodyBox{
     display:flex;
     flex-direction: row;
-    justify-content: center;
-    width: 1200px;    
+    /* justify-content: center; */
+    align-items: flex-start;
+    gap:20px;
+    width:100%;
+    max-width: 1200px;    
     margin: 0 auto;
 }
 .section1{
@@ -158,6 +170,9 @@ h3{
     display:flex;
     align-items: center;
     padding:0px;
+    white-space: nowrap;
+    overflow: hidden;
+
 }
 
 .sectionBox2{
@@ -196,6 +211,7 @@ h3{
     display: flex;
     flex-direction: column;
     gap:10px;
+    flex-shrink:0;
 }
 
 .asideBox1{
@@ -312,8 +328,10 @@ h3{
 }
 
 section{
-    display:flex;
+    display: flex;
     flex-direction: column;
+    flex:1;
+    min-width:0;
 }
 .articleBox1{
     display:flex;
@@ -409,4 +427,48 @@ footer{
 form.textBox1 p{
     padding:15px;
     margin:0;
+}
+.hamburgerBar{
+    display: none;
+}
+@media (max-width:640px){
+    .container{
+        display:none;
+    }
+    aside{
+        display:none;
+    }
+    
+    .hamburgerBar{
+        display:flex;
+        align-items: center;
+    }
+    .barImg{
+        padding:5px;
+        margin-left: 10px;
+    }
+    .navbox{
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        white-space: nowrap; 
+    }
+    .section1 > h3{
+        display: none;
+    }
+    .section1{
+        margin-top:10px;
+    }
+    .bodyBox{
+        /* flex-direction: column; */
+        width: 100%;
+        max-width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .asideBox{
+        width: 100%;
+        margin: 10px 0 0 0;
+    }
 }

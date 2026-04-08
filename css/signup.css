@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+
+.body-container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    gap:10px;
+}
+
+.title1{
+    font-weight: 800;
+}
+.title2{
+    font-size: 13px;
+}
+#titleFont{
+    font-weight: 800;
+}
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+}
+.inputTitle{
+    font-size: 11px;
+}
+.inputBox{
+    background-color: rgb(230, 230, 230);
+    border:none;
+    border-radius: 7px;
+    padding:5px;
+}
+.submitBtn{
+    background-color: rgb(166, 165, 165);
+    color:white;
+    border-radius:7px;
+    border:none;
+}
