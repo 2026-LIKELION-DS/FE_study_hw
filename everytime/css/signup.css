@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f8f8f8;
+    font-family: sans-serif;
+}
+
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 50px 30px;
+    border: 1px solid #e3e3e3;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.eta-logo { width: 50px; height: 50px; }
+.title { color: #c92a18; margin-top: 10px; margin-bottom: 30px; font-size: 20px; }
+.signup-form { display: flex; flex-direction: column; width: 100%; gap: 10px; }
+.input-box {
+    padding: 12px;
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    outline: none;
+}
+.submit-btn {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fca59e;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.submit-btn.active {
+    background-color: #c92a18; 
+}

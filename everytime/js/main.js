@@ -19,3 +19,16 @@ function toggleQuestion(checkbox) {
         questionText.style.color = "#666";
     }
 }
+
+
+
+function toggleNav() {
+    const navBoard = document.querySelector(".bulletin-board");
+    
+    navBoard.classList.toggle("active");
+}
+
+function toggleNav() {
+    const navBoard = document.querySelector(".bulletin-board");
+    navBoard.classList.toggle("active");
+}
