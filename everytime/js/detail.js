@@ -34,3 +34,43 @@ function addScrap() {
         isScrapped = false;
     }
 }
+
+
+
+function toggleNav() {
+    const navBoard = document.querySelector(".bulletin-board");
+    
+    navBoard.classList.toggle("active");
+}
+
+
+function toggleNav() {
+    const navBoard = document.querySelector(".bulletin-board");
+    navBoard.classList.toggle("active");
+}
+
+
+
+const submitBtn = document.querySelector(".submit-btn"); 
+const commentInput = document.querySelector(".comment-input");
+
+submitBtn.addEventListener("click", () => {
+    const commentText = commentInput.value;
+    
+    if (commentText === "") {
+        alert("댓글 내용을 입력해주세요!");
+    } else {
+        alert("작성하신 댓글: " + commentText);
+        commentInput.value = ""; 
+    }
+});
+
+function showReplyInput() {
+    commentInput.focus();
+    commentInput.placeholder = "대댓글을 입력하세요.";
+}
+
+const replyBtns = document.querySelectorAll(".reply-btn");
+for (let i = 0; i < replyBtns.length; i++) {
+    replyBtns[i].addEventListener("click", showReplyInput);
+}
