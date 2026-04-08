@@ -80,7 +80,7 @@ scrapDeleteBtn.addEventListener("click",function() {
   if(scrapClick) {
     scrapCounter.textContent=current-1;
     scrapDeleteBtn.style.display="none";
-    scrapButton.style.display="block";
+    scrapButton.style.display="flex";
   }
   scrapClick =!scrapClick;
 })
