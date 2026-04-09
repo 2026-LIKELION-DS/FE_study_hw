@@ -2,12 +2,31 @@ const pwLength = document.querySelector(".input-pw");
 const inputTxt = document.querySelector(".input-login");
 const submitBtn = document.querySelector(".inputSubmit");
 
+const signupBtn = document.querySelector(".signup-txt");
+signupBtn.addEventListener("click", function(){
+    location.href = "signup.html";
+})
+
+
 function checkInput(){
+    let check;
     if ((pwLength.value.length >= 8) && (inputTxt.value.length > 0)){
         submitBtn.style.backgroundColor = "#ff3939";
+        check=true;
     }else{
         submitBtn.style.backgroundColor = "rgb(171, 171, 171)";
+        check=false;
     }
+    return check;
 }
+submitBtn.addEventListener("click", function(e){
+    e.preventDefault();
+    const checking = checkInput();
+    if(!checking){
+        alert("정보를 입력하세요.");
+        return;
+    }
+        location.href = "main.html";
+    });
 inputTxt.addEventListener("input", checkInput);
 pwLength.addEventListener("input", checkInput);

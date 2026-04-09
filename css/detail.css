@@ -45,6 +45,15 @@ section {
     border:1px solid rgb(217, 217, 217);
     padding:10px 10px 10px 10px;
 }
+.sectionComment.active.dbactive{
+    border-top:none;
+}
+/* 대댓글창 */
+#dbComent{
+    background-color: rgb(245, 244, 244);
+    margin:5px 0;
+}
+
 .comentWriter{
     display: flex;
     margin:0;
@@ -169,7 +178,7 @@ section {
     background-color: rgb(245, 244, 244);
 }
 .comentbox{
-    font-size: 15px;
+    font-size: 13px;
     padding:0px;
     margin:0;
     background-color: rgb(245, 244, 244);
@@ -185,6 +194,7 @@ section {
     white-space: nowrap;
     align-items: center;
     margin: 0 10px 0 0;
+    font-size:12px;
 }
 .anonymousBox{
     margin: 0 5px 0 0;
