@@ -796,12 +796,27 @@ ul {
   display: flex;
 }
 
-#likeBtn {
-  display: flex;
+.action-buttons1 {
+  margin-right: 10px;
+  background-color: white;
+}
+
+#likeBtn,
+#scrapBtn {
+  background-color: white;
+  border: 1px solid #c6c6c6;
+}
+
+#likeBtn img {
+  width: 20px;
 }
 
 #scrapBtn img {
   width: 20px;
+}
+
+.action-button {
+  display: flex;
 }
 
 .one {
