@@ -1,0 +1,65 @@
+.allbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 450px;
+}
+
+.header {
+  text-align: left;
+  margin-left: 40px;
+}
+
+.header1 {
+  font-size: 37px;
+  font-weight: bold;
+}
+
+.header2,
+.header3 {
+  font-size: 20px;
+  color: gray;
+}
+
+.bold {
+  font-weight: bold;
+  color: black;
+}
+
+.name {
+  color: gray;
+}
+
+.people {
+  width: 800px;
+  border: none;
+  background-color: rgb(228, 228, 228);
+  border-radius: 15px;
+  padding: 20px;
+  font-size: 17px;
+}
+
+.box {
+  margin: 30px;
+  padding: 5px;
+}
+
+.last {
+  border: none;
+  width: 850px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  color: white;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 30px;
+  font-size: 20px;
+}
+
+.last.active {
+  background-color: #c62917;
+  cursor: pointer;
+}

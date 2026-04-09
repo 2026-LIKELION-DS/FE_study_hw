@@ -1,0 +1,54 @@
+.header img {
+  width: 450px;
+  margin-bottom: 80px;
+}
+
+.allbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 350px;
+}
+
+.id-input,
+.password-input {
+  width: 900px;
+  padding: 30px;
+  border-radius: 30px;
+  border: none;
+  background-color: rgb(212, 211, 211);
+  font-size: 25px;
+  margin: 5px;
+}
+
+.login-input {
+  width: 960px;
+  padding: 30px;
+  border-radius: 30px;
+  border: none;
+  background-color: gray;
+  color: white;
+  font-size: 25px;
+  margin: 5px;
+}
+
+.word {
+  font-size: 30px;
+  color: rgb(170, 169, 169);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 200px;
+}
+
+.word1 {
+  font-size: 30px;
+  color: rgb(170, 169, 169);
+  padding: 20px;
+}
+
+.login-input.active {
+  background-color: #c62917;
+  cursor: pointer;
+}
