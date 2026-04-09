@@ -175,8 +175,10 @@ nav {
 section {
   width: 800px;
 }
+
 .secret {
   margin-right: 30px;
+  margin-left: 30px;
   width: 800px;
   min-width: 800px;
 }
@@ -613,6 +615,7 @@ body {
 
   .secret {
     margin-right: 5px;
+    margin-left: 0px;
   }
 
   section,
