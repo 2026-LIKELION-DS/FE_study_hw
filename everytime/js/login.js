@@ -10,7 +10,6 @@ function checkout() {
     loginBtn.style.backgroundColor = "#f91f15";
     loginBtn.style.color = "white";
   } else {
-    loginBtn.style.backgroundColor = "#f2f2f2";
     loginBtn.style.color = "#636363";
   }
 }
