@@ -201,11 +201,12 @@ ul {
 }
 
 .secret-box {
-  width: 1180px;
+  width: 100%;
   height: 80px;
   border: 1px solid #ddd;
   padding: 0px 20px;
   background-color: #ffffff;
+  margin: 10px;
 }
 
 .img1 {
@@ -233,8 +234,9 @@ ul {
   gap: 15px;
   border: 1px solid #ddd;
   padding: 20px;
-  width: 1180px;
+  width: 100%;
   box-sizing: border-box;
+  margin: 10px;
 }
 
 .row1 {
@@ -308,6 +310,7 @@ ul {
   width: 100%;
   display: flex;
   align-items: center;
+  margin: 10px;
 }
 
 .secret-box3 img {
@@ -320,12 +323,14 @@ ul {
   border: 1px solid #ddd;
   padding: 10px 10px;
   width: 100%;
+  margin: 10px;
 }
 
 .article2 {
   border: 1px solid #ddd;
   padding: 10px 10px;
   width: 100%;
+  margin: 10px;
 }
 
 .article3 {
@@ -335,6 +340,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  margin: 10px;
 }
 
 .article3-text {
@@ -381,6 +387,7 @@ ul {
   border: 1px solid #c6c6c6;
   font-size: 14px;
   padding: 0 15px;
+  margin-top: 10px;
 }
 
 .box1-2 {
@@ -527,4 +534,63 @@ ul {
   cursor: pointer;
   font-size: 16px;
   color: #9a9a9a;
+}
+
+
+/*미디어쿼리*/
+
+.header-container {
+  display: none;
+}
+
+
+@media screen and (max-width: 640px) {
+  .main-nav2
+  {
+    max-width: 640px;
+  }
+
+
+  .site-header
+  {
+    display: none;
+  }
+  
+  .secret-box {
+    display: none;
+  }
+
+  .header-container
+  {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .mobile-only {
+    border: none;
+    background-color: white;
+  }
+
+  .mobile-only img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .board-title {
+    font-size: 20px;
+  }
+
+
+  aside, .side-menu { 
+        display: none !important; 
+    }
+
+    nav {
+        width: 100%;
+        overflow-x: auto; 
+        white-space: nowrap; 
+    }
+
+
 }

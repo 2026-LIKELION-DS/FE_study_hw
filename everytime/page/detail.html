@@ -20,6 +20,17 @@
       </a>
     </h1>
 
+    <!--미디어쿼리-->
+
+    <div class="header-container">
+          <button type="button" class="mobile-only">
+            <img src="../img/aside.title.hamburger.png">
+          </button>
+            <div class="board-title">비밀게시판</div>
+        </div>
+    
+    <!--여기까지 미디어쿼리-->
+
     <nav class="main-nav" label="주요 메뉴">
       <ul>
         <li><a href="#" class="active">게시판</a></li>
@@ -189,24 +200,84 @@
                     </div>
                 </div>
 
-                <div class="action-buttons">
+                <div class="action-button">
+                <div class="action-buttons1">
+                  <!-- <div id="counter"> -->
                     <button type="button" id="likeBtn">
-                        <img src="../img/container.articles.buttons.posvote.png" alt="따봉이미지"> 공감</button>
+                    <img src="../img/container.articles.buttons.posvote.png" alt="따봉이미지"/> 공감</button>
+                  <!-- </div> -->
+                </div>
+                <div class="action-buttons2">
                     <button type="button" id="scrapBtn">
-                        <img src="../img/container.articles.buttons.scrap.png" alt="스크랩이미지"> 스크랩</button>
-                    </div> 
+                        <img src="../img/container.articles.buttons.scrap.png" alt="스크랩이미지">스크랩</button>
+                </div>
+                </div>
+                     
                     
                     <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
 
                 </div>
+
+
+  <div class="none" id="comment-list" style="display: none;">
+    <div class="comment1">
+    <div class="comment-header">
+        <div class="user-info">
+            <img src="../img/anonymous.profile.png" class="profile-img">
+            <span class="nickname">익명2</span>
+        </div>
+        <div class="comment-menu">
+            <span>대댓글</span> <span>공감</span> <span>쪽지</span> <span>신고</span>
+        </div>
+    </div>
+    <div class="content">삼김이?</div>
+    <div class="footer">
+        <span class="date">02/09 22:30</span>
+    </div>
+</div>            
+
+    <div class="comment1">
+    <div class="comment-header">
+        <div class="user-info">
+            <img src="../img/anonymous.profile.png" class="profile-img">
+            <span class="nickname">익명3</span>
+        </div>
+        <div class="comment-menu">
+            <span id="reply-btn" style="cursor: pointer;">대댓글</span> <span>공감</span> <span>쪽지</span> <span>신고</span>
+        </div>
+    </div>
+    <div class="content">도덕이❤️</div>
+    <div class="footer">
+        <span class="date">02/09 22:35</span>
+        <span class="one"><img src="../img/container.articles.vote.red.png" alt="따봉" style="width: 20px;">1</span>
+    </div>
+</div>
+
+<div class="reply" id="reply-area" style="display: none;">
+    <div class="comment-header">
+        <div class="user-info">
+            <img src="../img/anonymous.profile.png" class="profile-img">
+            <span class="nickname writer" style="color: mediumaquamarine;">익명(글쓴이)</span>
+        </div>
+        <div class="comment-menu">
+            <span>공감</span> <span>쪽지</span> <span>신고</span>
+        </div>
+    </div>
+    <div class="content">정답😘</div>
+    <div class="footer">
+        <span class="date">02/09 22:49</span>
+    </div>
+</div>
+</div>
+
                 <div class="comment-box">
-                    <input type="text" class="comment-input" placeholder="댓글을 입력하세요.">
+                    <input type="text" id="comment-input" class="comment-input" placeholder="댓글을 입력하세요.">
                     <div class="comment-right">
                         <label>
                         <input type="checkbox">
                             익명
                         </label>
-                        <img src="../img/redpencile.png" alt="작성펜 사진">
+                        <button type="button" id="redpencilebutton" class="redpencilebutton"><img src="../img/redpencile.png" alt="작성펜 사진"></button>
                     </div>
                 </div>
             </div>
@@ -288,6 +359,6 @@
 </div>
 
 
-<scritp src="../js/detail.js"></scritp>
+<script src="../js/detail.js" defer></script>
 </body>
 </html>
