@@ -4,10 +4,17 @@
     font-family: "Apple SD Gothic Neo", "맑은 고딕", "돋움", sans-serif;
 }
 
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 .container {
     box-sizing: border-box;
     padding: 48px 24px;
-    width: 100%;
+    width: 360px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,7 +28,7 @@
     height: 56px;
 }
 
-.input {
+.input_id, .input_pw {
     display: block;
     box-sizing: border-box;
     margin-top: 4px;

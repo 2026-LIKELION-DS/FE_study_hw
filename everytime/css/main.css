@@ -96,7 +96,7 @@ li {
   width: 0.7px;
   min-height: 220px;
   background-color: #dddddd;
-  margin: 10px 25px 0;
+  margin: 10px 5px 0;
   flex-shrink: 0;
 }
 
@@ -114,7 +114,7 @@ li {
 
 .section h1 {
   border: 1.5px solid #eeeeee;
-  padding: 10px 20px;
+  padding: 15px 20px;
   font-size: 25px;
 }
 

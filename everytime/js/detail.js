@@ -1,16 +1,17 @@
 // 익명 버튼
-const anonymButton = document.querySelector('.anonym_btn');
+const anonymButtons = document.querySelectorAll('.anonym_btn');
 
-let isAnonym = false;
+anonymButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        const anonymImg = this.querySelector('img');
+        const isActive = anonymImg.src.includes('active.png');
 
-anonymButton.addEventListener('click', function() {
-    isAnonym = !isAnonym;
-    const anonym_img = anonymButton.querySelector('img');
-    if (isAnonym) {
-        anonym_img.src = "../img/container.articles.write.anonym.active.png";
-    } else {
-        anonym_img.src = "../img/container.articles.write.anonym.png";
-    }
+        if (!isActive) {
+            anonymImg.src = "../img/container.articles.write.anonym.active.png";
+        } else {
+            anonymImg.src = "../img/container.articles.write.anonym.png";
+        }
+    });
 });
 
 // 공감 버튼
@@ -50,4 +51,18 @@ scrapBtn.addEventListener('click', function() {
         
         isScrap = false;
     }
+});
+
+// 댓글, 대댓글 기능
+const submitButtons = document.querySelectorAll('.submit_btn');
+
+submitButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        const parentContainer = this.closest('.input_container, .re_comment_input');
+        const inputField = parentContainer.querySelector('input');
+        
+        const commentValue = inputField.value;
+
+        alert(commentValue);
+    });
 });

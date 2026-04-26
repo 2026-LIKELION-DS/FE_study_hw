@@ -4,10 +4,17 @@
     font-family: "Apple SD Gothic Neo", "맑은 고딕", "돋움", sans-serif;
 }
 
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 .container {
     padding: 16px 24px 48px 24px;
     box-sizing: border-box;
-    width: 100%;
+    width: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
