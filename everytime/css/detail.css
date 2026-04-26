@@ -678,12 +678,16 @@ header {
 
 
 .replys {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #f8f8f8;
     border: 1px solid #e3e3e3;
     margin: 0 4px 4px 35px; 
+    display: none;
+}
+
+.replys.show {
+    display: flex;
 }
 
 .reply-text {

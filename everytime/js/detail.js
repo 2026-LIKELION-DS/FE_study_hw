@@ -63,16 +63,16 @@ submitBtn.addEventListener("click", function() {
 
 
 const replyBtn = document.querySelectorAll(".reply-btn");
-const replyContainer = document.querySelectorAll(".reply-container");
+const replys = document.querySelectorAll(".replys");
 const replyText = document.querySelectorAll(".reply-text");
 const replySubmitBtn = document.querySelectorAll(".reply-submit-btn"); 
 
 for (let i = 0; i < replyBtn.length; i++) {
     replyBtn[i].addEventListener("click", function() {
-        replyContainer[i].classList.toggle("show");
+        replys[i].classList.toggle("show");
         
-        if (replyContainer[i].classList.contains("show")) {
-            replyBtn[i].focus();
+        if (replys[i].classList.contains("show")) {
+            replyText[i].focus();
         }
     });
 }
