@@ -40,10 +40,12 @@ if (questionBox && questionContainer) {
 let reaction = {
     like : document.querySelector('.reaction_button1'),
     likeNum : document.querySelector('.redTxt'),
+    likeTxt : document.querySelector('.grayTxt1'),
     scrap : document.querySelector('.reaction_button2'),
     scrapNum : document.querySelector('.yellowTxt'),
     scrapTxt : document.querySelector('.grayTxt'),
     scrapImg: document.querySelector('.reaction_button2 img'),
+    likeImg: document.querySelector('.reaction_button1 img'),
 };
 
 let likeClick=false;

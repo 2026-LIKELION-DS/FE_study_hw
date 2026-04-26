@@ -5,7 +5,7 @@ const borderTag = document.querySelector(".sectionContent");
 const borderTag2 = document.querySelector(".comentContainer");
 const dbcoment = document.querySelector(".jscoment");
 
-let cnt = 2;
+let cnt = 4;
 submitBtn.addEventListener("click", function() {
     let comentTxt=inputBox.value;
     if (comentTxt.length>0){
@@ -20,7 +20,7 @@ submitBtn.addEventListener("click", function() {
 
 function createComent(text){
     addComent.innerHTML += `
-        <div class="sectionComment active">
+        <div class="sectionComment active dbactive">
             <div class="coment-box">
                 <div class="writer">
                     <div class="writerImg"><img src="../img/anonymous.profile.png" width="20" height="20">
@@ -42,6 +42,7 @@ function createComent(text){
             </div>
         </div>
     `;
+    alert(`${text}`);
 }
 function dbcomentBox(){
     const div = document.createElement("div");
@@ -52,8 +53,8 @@ function dbcomentBox(){
                 <li class="check-coment">
                     <input type="checkbox" class="anonymousBox">익명
                 </li>
-                <li class="writeButton">
-                    <img src="../img/container.articles.write.submit.png"width="40px"height="40px" alt="글작성버튼">
+                <li class="writeButton reWriteBtn">
+                    <img src="../img/container.articles.write.submit.png"width="40px"height="40px" class="dbcomentSubmit" alt="글작성버튼">
                 </li>
             </ul>
     `;
@@ -64,5 +65,16 @@ document.addEventListener("click", function(e){
         const commentBox = e.target.closest(".sectionComment");
         const replyBox = dbcomentBox();
         commentBox.appendChild(replyBox); 
+    }
+});
+
+//대댓글버튼클릭
+document.addEventListener("click", function(e){
+    const reWriteBtn= e.target.closest(".reWriteBtn");
+    if(!reWriteBtn)return;
+    const comentContainer = reWriteBtn.closest(".comentContainer");
+    const rewriteTxt = comentContainer.querySelector(".comentbox");
+    if(rewriteTxt.value.length>0){
+        alert(`${rewriteTxt.value}`);
     }
 });
