@@ -1,5 +1,9 @@
+.left-g {
+  width: 100%;
+}
+
 .comment {
-  width: stretch;
+  width: 100%;
   height: 40px;
   padding: 10px 85px 10px 10px;
   box-sizing: border-box;
@@ -13,9 +17,37 @@
   background-color: #f6f6f6;
 }
 
+.reco-input {
+  width: 100%;
+  height: 40px;
+  padding: 10px 85px 10px 10px;
+  box-sizing: border-box;
+  line-height: 20px;
+  border: 0;
+  font-size: 13px;
+  color: #262626;
+
+  outline: none;
+  appearance: none;
+  background-color: #f6f6f6;
+}
+
+.comment-profile {
+  width: 20px;
+  height: 20px;
+  border-radius: 20%;
+}
+
 .option {
+  border-top: 1px solid #e3e3e3;
   background-color: #f6f6f6;
   justify-content: none;
+}
+
+.re-submit {
+  border: none;
+  background-image: url("../img/container.articles.write.submit.png");
+  background-color: #f91f15;
 }
 
 .detail_post {
@@ -42,6 +74,22 @@
   padding: 10px;
 }
 
+.comment-title {
+  border-bottom: none;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: auto;
+  justify-content: space-between;
+
+  padding: 15px 15px 5px 15px;
+}
+
+.comment-detail {
+  border-bottom: 1px solid #e3e3e3;
+}
+
 .detail-profile {
   width: 40px;
   height: 40px;
@@ -57,6 +105,135 @@
   justify-content: center;
   gap: 2px;
 }
+
+.comment-who {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+  font-size: 11px;
+}
+
+.comment-time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+}
+
+.comment-div {
+  margin: 3px 15px 10px 15px;
+}
+
+.comment-contents {
+  margin-bottom: 10px;
+}
+
+.comment-gap {
+  display: flex;
+  gap: 5px;
+}
+
+.comment-etc {
+  display: flex;
+  gap: 10px;
+  color: #a6a6a6;
+  font-size: 12px;
+}
+/* 대댓글 생성 */
+.reco-option {
+  display: flex;
+  width: 95%;
+  margin-left: auto;
+  margin-bottom: 5px;
+  border: 1px solid #e3e3e3;
+  background-color: #f6f6f6;
+
+  border-top: 1px solid #e3e3e3;
+}
+
+.re-comment {
+  width: 100%;
+  height: 40px;
+  padding: 10px 85px 10px 10px;
+  box-sizing: border-box;
+  line-height: 20px;
+  border: 0;
+  font-size: 13px;
+  color: #262626;
+
+  outline: none;
+  appearance: none;
+  background-color: #f6f6f6;
+}
+
+#re-comment {
+  display: none;
+}
+
+/* 대댓글 */
+
+.reco-detail {
+  display: none;
+
+  width: 95%;
+  margin-left: auto;
+  margin-bottom: 5px;
+  border: 1px solid #e3e3e3;
+  background-color: #f6f6f6;
+  padding: 0px 15px 0px 10px;
+}
+
+.reco-title {
+  border-bottom: none;
+  color: #05bcbc;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: auto;
+  justify-content: space-between;
+
+  padding: 10px 0px 5px 0px;
+}
+
+.reco-gap {
+  display: flex;
+  gap: 5px;
+}
+
+.reco-profile {
+  width: 20px;
+  height: 20px;
+  border-radius: 20%;
+}
+
+.reco-who {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+  font-size: 11px;
+}
+
+.reco-etc {
+  display: flex;
+  gap: 10px;
+  color: #a6a6a6;
+  font-size: 12px;
+}
+
+.reco-contents {
+  margin-bottom: 10px;
+}
+
+.reco-status {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  color: #a6a6a6;
+  gap: 5px;
+}
+
 time {
   color: #a6a6a6;
   font-size: 12px;
@@ -104,6 +281,7 @@ time {
   justify-content: start;
   color: #a6a6a6;
   gap: 5px;
+  margin-bottom: 10px;
 }
 
 .status > p {
@@ -166,7 +344,7 @@ time {
 }
 #scrap-num {
   display: block;
-  
+
   color: #ffc900;
   font-size: 12px;
 }

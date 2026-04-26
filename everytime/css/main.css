@@ -105,7 +105,7 @@ nav {
   justify-content: flex-start;
   background-color: #f2f2f2;
   width: 100%;
-  overflow-x: auto;
+  overflow-x: hidden;
 }
 
 .nav-box {
@@ -175,8 +175,10 @@ nav {
 section {
   width: 800px;
 }
+
 .secret {
   margin-right: 30px;
+  margin-left: 30px;
   width: 800px;
   min-width: 800px;
 }
@@ -224,6 +226,7 @@ h4 {
 .k_blue {
   display: flex;
   margin-bottom: 10px;
+  overflow: hidden;
 }
 .k_blue p {
   margin: 0 5px;
@@ -612,6 +615,7 @@ body {
 
   .secret {
     margin-right: 5px;
+    margin-left: 0px;
   }
 
   section,
@@ -630,7 +634,7 @@ body {
 
   .new_board {
     margin: 5px;
-    width: 100%;
+    width: 99%;
   }
 
   .art,
@@ -639,13 +643,17 @@ body {
   }
 
   .board1 p {
-  line-height: 2;
-  font-size: 12px;
-  color: #444444;
-  width: 120px;
-  height: 25px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
+    line-height: 2;
+    font-size: 12px;
+    color: #444444;
+    width: 120px;
+    height: 25px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .container {
+    margin: 5px;
+  }
 }

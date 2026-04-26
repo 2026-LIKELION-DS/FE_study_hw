@@ -183,19 +183,128 @@
               </button>
             </div>
           </div>
+          <!-- 첫번째 댓글 -->
+          <div class="comment-detail">
+            <div class="comment-title">
+              <div class="comment-gap">
+                <img
+                  class="comment-profile"
+                  src="../img/anonymous.profile.png"
+                />
+                <div class="comment-who">
+                  <h3>익명1</h3>
+                </div>
+              </div>
+              <div class="comment-etc">
+                <p>대댓글</p>
+                <p>공감</p>
+                <p>쪽지</p>
+                <p>신고</p>
+              </div>
+            </div>
+            <div class="comment-div">
+              <p class="comment-contents">
+                에타에 수면실 검색하고 스크랩순으로 보면 글 나옵니당
+              </p>
+              <div class="reco-status">
+                <div class="reco-time">
+                  <time>04/02 12:44</time>
+                </div>
+                <div class="status_red">
+                  <div id="img_red"></div>
+                  <span id="like-num">1</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 두번째 댓글 -->
+          <div class="comment-detail">
+            <div class="comment-title">
+              <div class="comment-gap">
+                <img
+                  class="comment-profile"
+                  src="../img/anonymous.profile.png"
+                />
+                <div class="comment-who">
+                  <h3>익명2</h3>
+                </div>
+              </div>
+              <div class="comment-etc">
+                <p id="reco-button">대댓글</p>
+                <p>공감</p>
+                <p>쪽지</p>
+                <p>신고</p>
+              </div>
+            </div>
+            <div class="comment-div">
+              <p class="comment-contents">
+                에타에 수면실 검색하고 스크랩순으로 보면 글 나옵니당
+              </p>
+              <div class="reco-status">
+                <div class="reco-time">
+                  <time>04/02 12:44</time>
+                </div>
+                <div class="status_red">
+                  <div id="img_red"></div>
+                  <span id="like-num">3</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 대댓글 생성 -->
+          <div class="reco-option" id="re-comment">
+            <div class="left-g">
+              <input
+                class="reco-input"
+                maxlength="400"
+                type="text"
+                placeholder="대댓글을 입력하세요"
+              />
+            </div>
+            <div class="right-g">
+              <div title="익명" class="anonym"></div>
+              <button type="button" title="완료" class="re-submit"></button>
+            </div>
+          </div>
 
+          <!-- 대댓글 -->
+          <div class="reco-detail">
+            <div class="reco-title">
+              <div class="reco-gap">
+                <img class="reco-profile" src="../img/anonymous.profile.png" />
+                <div class="reco-who">
+                  <h3>익명(글쓴이)</h3>
+                </div>
+              </div>
+              <div class="reco-etc">
+                <p>공감</p>
+                <p>쪽지</p>
+                <p>신고</p>
+              </div>
+            </div>
+            <div class="reco-div">
+              <p class="reco-contents">감사합니당ㅇ</p>
+              <div class="status">
+                <div class="comment-time">
+                  <time>04/02 12:44</time>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 댓글 생성 -->
           <div class="option">
             <div class="left-g">
               <input
                 class="comment"
-                maxlength="300"
+                maxlength="400"
                 type="text"
                 placeholder="댓글을 입력하세요"
               />
             </div>
             <div class="right-g">
               <div title="익명" class="anonym"></div>
-              <button title="완료" class="submit"></button>
+              <button type="button" title="완료" class="submit"></button>
             </div>
           </div>
         </form>

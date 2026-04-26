@@ -80,7 +80,7 @@ body {
 
 .signup {
   float: right;
-  padding: 30px;
+  margin: 30px;
   line-height: 20px;
   color: #737373;
   font-size: 14px;
