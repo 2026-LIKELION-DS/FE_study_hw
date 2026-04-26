@@ -8,38 +8,68 @@
     <script src="../js/detail.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="everytime-logo">
-            <img src="../img/aside.title.hamburger.png" alt="메뉴" class="hamburger-icon" onclick="toggleNav()">
+<header class="main-header">
+    <div class="header-inner">
+        
+        <div class="desktop-header">
+            <div class="everytime-logo">
+                <a href="https://everytime.kr">
+                    <img src="../img/에타.png" alt="에타 로고" class="logo-img">
+                </a>
+                <div class="logo-text">
+                    <p class="logo-everytime">에브리타임</p>
+                    <p class="logo-univname">덕성여대</p>
+                </div>
+            </div>
             
-            <a href="https://everytime.kr">
-                <img src="../img/에타.png" alt="에타 로고" class="logo-img">
-            </a>
-            <div class="logo-text">
-                <p class="logo-everytime">에브리타임</p>
-                <p class="logo-univname">덕성여대</p>
+            <ul class="banner-top">
+                <li><a href="https://everytime.kr">게시판</a></li>
+                <li><a href="https://everytime.kr/timetable">시간표</a></li>
+                <li><a href="https://everytime.kr/lecture">강의실</a></li>
+                <li><a href="https://everytime.kr/calculator">학점계산기</a></li>
+                <li><a href="https://everytime.kr/friend">친구</a></li>
+                <li><a href="https://bookstore.everytime.kr">책방</a></li>
+                <li><a href="https://www.campuspick.com">캠퍼스픽</a></li>
+            </ul>
+
+            <div class="users-menu">
+                <a href="https://everytime.kr/message"><img src="../img/icn_m_chat_gray800_light.png" alt="쪽지" class="icon-img"></a>
+                <a href="https://everytime.kr/my"><img src="../img/icn_m_account_gray800_light.png" alt="내 정보" class="icon-img"></a>
             </div>
         </div>
-        
-        <ul class="banner-top">
-            <li class="banner-top-option"><a href="https://everytime.kr">게시판</a></li>
-            <li><a href="https://everytime.kr/timetable">시간표</a></li>
-            <li><a href="https://everytime.kr/lecture">강의실</a></li>
-            <li><a href="https://everytime.kr/calculator">학점계산기</a></li>
-            <li><a href="https://everytime.kr/friend">친구</a></li>
-            <li><a href="https://bookstore.everytime.kr">책방</a></li>
-            <li><a href="https://www.campuspick.com">캠퍼스픽</a></li>
-        </ul>
 
-        <div class="users-menu">
-            <a href="https://everytime.kr/message">
-                <img src="../img/icn_m_chat_gray800_light.png" alt="쪽지" class="icon-img">
-            </a>
-            <a href="https://everytime.kr/my">
-                <img src="../img/icn_m_account_gray800_light.png" alt="내 정보" class="icon-img">
-            </a>
+        <div class="mobile-header">
+            <img src="../img/aside.title.hamburger.png" alt="메뉴" class="hamburger-icon" onclick="toggleNav()">
+            <p class="which-board">비밀게시판</p>
         </div>
-    </header>
+
+    </div>
+</header>
+
+<nav class="side-hamburger">
+    <div class="everytime-logo-hamburger">            
+        <a href="https://everytime.kr"><img src="../img/에타.png" alt="에타 로고" class="logo-img"></a>
+        <div class="logo-text">
+            <p class="logo-everytime">에브리타임</p>
+            <p class="logo-univname">덕성여대</p>
+        </div>
+    </div>
+    
+    <ul class="banner-top">
+        <li><a href="https://everytime.kr">게시판</a></li>
+        <li><a href="https://everytime.kr/timetable">시간표</a></li>
+        <li><a href="https://everytime.kr/lecture">강의실</a></li>
+        <li><a href="https://everytime.kr/calculator">학점계산기</a></li>
+        <li><a href="https://everytime.kr/friend">친구</a></li>
+        <li><a href="https://bookstore.everytime.kr">책방</a></li>
+        <li><a href="https://www.campuspick.com">캠퍼스픽</a></li>
+    </ul>
+
+    <div class="users-menu">
+        <a href="https://everytime.kr/message"><img src="../img/icn_m_chat_gray800_light.png" alt="쪽지" class="icon-img"></a>
+        <a href="https://everytime.kr/my"><img src="../img/icn_m_account_gray800_light.png" alt="내 정보" class="icon-img"></a>
+    </div>
+</nav>
 
 <nav class="bulletin-board">
         <div class="board-type">
@@ -77,7 +107,7 @@
                 <li>운현방송국</li>
                 <li>대학일자리본부</li>
                 <li>교지편집위원회</li>
-                <li>과학기술대학 학생회</li>
+                <li>과학기술대학학생회</li>
                 <li class="clickForMore">더 보기</li>
             </ul>
         </div>
@@ -165,6 +195,69 @@
             </div>
         </div>
 
+        <div class="comment-list-box">
+            <div class="comment-group">
+            <div class="comment-item">
+                <div class="comment-profile">
+                    <div class="comment-img-author">
+                        <img src="../img/anonymous.profile.png" alt="익명" class="comment-anon-img">
+                        <div class="comment-author">익명1</div>
+                    </div>
+                    <div class="comment-btns">
+                        <span class="reply-btn">대댓글</span>
+                        <span class="like-btn">공감</span>
+                        <span class="send-message">쪽지</span>
+                        <span class="report">신고</span>
+                    </div>
+                </div>
+                <p class="comment-text">지금 대강의동 공사해??</p>
+                <div class="comment-meta">
+                    <span class="comment-time">10분 전</span>
+                    <span class="vote-count2">
+                        <img src="../img/container.articles.vote.png" alt="공감" class="vote-icon2">
+                    <span class="vote-num">2</span>
+                </span>
+                </div>
+            </div>
+            </div>
+            
+            <div class="reply-container">
+            <div class="comment-reply">
+                <div class="comment-profile">
+                    <div class="comment-img-author">
+                        <img src="../img/anonymous.profile.png" alt="익명" class="comment-anon-img">
+                        <div class="comment-author">익명2</div>
+                    </div>
+                        <div class="comment-functions">
+                            <span class="comment-like">공감</span>
+                            <span class="send-message">쪽지</span>
+                            <span class="report">신고</span>
+                        </div>
+                    </div>
+                    <p class="comment-text">응 며칠 전부터 하더라</p>
+                    <div class="comment-meta">
+                        <span class="comment-time">2분 전</span>
+                        <span class="vote-count2">
+                            <img src="../img/container.articles.vote.png" alt="공감" class="vote-icon2">
+                        <span class="vote-num">1</span>
+                    </span>
+                    </div>
+                </div>
+
+                    <div class="replys">
+                        <input type="text" placeholder="대댓글을 입력하세요." class="reply-text">
+                        <div class="reply-submit">
+                            <img class="anonym" src="../img/container.articles.write.anonym.png" alt="익명 체크박스 이미지">
+                            <img class="reply-submit-btn" src="../img/container.articles.write.submit.png" alt="완료">
+                        </div>
+                    </div>
+                
+            </div>
+            </div>
+    
+
+        
+            
         <div class="pagination">
             <img src="../img/container.articles.pagination.list.png" alt="글 목록" class="pagination-icon">
             <span class="post-list">글 목록</span>
@@ -238,7 +331,7 @@
         </article>
         
     </div>
-
+    </div>
     
 
     </aside>

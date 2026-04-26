@@ -38,15 +38,8 @@ function addScrap() {
 
 
 function toggleNav() {
-    const navBoard = document.querySelector(".bulletin-board");
-    
-    navBoard.classList.toggle("active");
-}
-
-
-function toggleNav() {
-    const navBoard = document.querySelector(".bulletin-board");
-    navBoard.classList.toggle("active");
+    const sideHamburger = document.querySelector(".side-hamburger");
+    sideHamburger.classList.toggle("active");
 }
 
 
@@ -54,7 +47,7 @@ function toggleNav() {
 const submitBtn = document.querySelector(".submit-btn"); 
 const commentInput = document.querySelector(".comment-input");
 
-submitBtn.addEventListener("click", () => {
+submitBtn.addEventListener("click", function() {
     const commentText = commentInput.value;
     
     if (commentText === "") {
@@ -65,12 +58,73 @@ submitBtn.addEventListener("click", () => {
     }
 });
 
-function showReplyInput() {
-    commentInput.focus();
-    commentInput.placeholder = "대댓글을 입력하세요.";
+
+
+
+
+const replyBtn = document.querySelectorAll(".reply-btn");
+const replyContainer = document.querySelectorAll(".reply-container");
+const replyText = document.querySelectorAll(".reply-text");
+const replySubmitBtn = document.querySelectorAll(".reply-submit-btn"); 
+
+for (let i = 0; i < replyBtn.length; i++) {
+    replyBtn[i].addEventListener("click", function() {
+        replyContainer[i].classList.toggle("show");
+        
+        if (replyContainer[i].classList.contains("show")) {
+            replyBtn[i].focus();
+        }
+    });
 }
 
-const replyBtns = document.querySelectorAll(".reply-btn");
-for (let i = 0; i < replyBtns.length; i++) {
-    replyBtns[i].addEventListener("click", showReplyInput);
+for (let i = 0; i < replySubmitBtn.length; i++) {
+    replySubmitBtn[i].addEventListener("click", function() {
+        const text = replyText[i].value;
+
+        if (text === "") {
+            alert("대댓글 내용을 입력해주세요!");
+        } else {
+            alert("작성하신 대댓글: " + text);
+            replyText[i].value = "";
+        }
+    });
+}
+
+
+
+
+
+const menuLinks = document.querySelectorAll(".side-hamburger .banner-top a");
+
+if (menuLinks.length > 0) {
+    menuLinks[0].classList.add("active-menu");
+    menuLinks[0].style.backgroundColor = "#f9f9f9";
+    menuLinks[0].style.color = "#f91f15";
+}
+
+for (let i = 0; i < menuLinks.length; i++) {
+    
+    menuLinks[i].addEventListener("mouseover", function() {
+        this.style.backgroundColor = "#f9f9f9";
+        this.style.color = "#f91f15";
+    });
+
+    menuLinks[i].addEventListener("mouseout", function() {
+        if (!this.classList.contains("active-menu")) {
+            this.style.backgroundColor = "";
+            this.style.color = "#1b1a1a";
+        }
+    });
+
+    menuLinks[i].addEventListener("click", function(event) {
+        for (let j = 0; j < menuLinks.length; j++) {
+            menuLinks[j].classList.remove("active-menu");
+            menuLinks[j].style.backgroundColor = "";
+            menuLinks[j].style.color = "#1b1a1a";
+        }
+        
+        this.classList.add("active-menu");
+        this.style.backgroundColor = "#f9f9f9";
+        this.style.color = "#f91f15";
+    });
 }
