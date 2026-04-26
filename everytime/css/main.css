@@ -97,6 +97,7 @@ header {
   padding: 10px;
   border:1px solid #d6d6d6;
   border-radius: 12px;
+  cursor: pointer;
 }
 /* #icon-my {
   width: 50px;
@@ -115,6 +116,7 @@ header {
   padding: 10px;
   border:1px solid #d6d6d6;
   border-radius: 12px;
+  cursor: pointer;
 }
 nav {
   justify-content: center;
@@ -800,8 +802,66 @@ span.on{
 #postContainer{
   display: none;
 }
+
+
+
+.questionItems{
+  display: flex;
+  gap: 3px;
+}
+
+.anotheritem{
+  padding: 12px;
+  font-size: 12px;
+  color: #666666;
+  background-color: rgba(206, 254, 244, 0.594);
+  border-radius: 15px;
+  white-space: nowrap;
+}
+
+.anotherHot{
+  display: flex;
+  margin-top: 7px;
+}
+.anotherHotContainer{
+  display: flex;
+}
+.anotherHotBox{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f3c6c456;
+  border-radius: 15px;
+  gap: 3px;
+  
+}
+#anotherHotItem{
+  align-items: center;
+  color: #666666;
+  font-size: 12px;
+  align-self: center;
+}
+
+
+
+
+
+
+
+
+@media all and (min-width:641px){
+  .anotherHeader{
+    display: none;
+  }
+  .anotherContainer{
+    display: none;
+  }
+}
 @media all and (max-width:640px) {
   aside{
+    display: none;
+  }
+  .top-menu{
     display: none;
   }
 }

@@ -104,3 +104,64 @@ scrapDeleteBtn.addEventListener("click",function() {
 //     scrapBut.style.display = "block";
 //   }
 // });
+
+
+
+
+
+
+
+
+
+
+
+document.querySelector('.reply-trigger').addEventListener('click', function() {
+    const inputArea = document.querySelector('.reply-input-area');
+    
+    // 클릭 시 입력창 보이기/숨기기 토글
+    if (inputArea.style.display === 'none') {
+        inputArea.style.display = 'block';
+    } else {
+        inputArea.style.display = 'none';
+    }
+});
+
+// document.querySelector('.submit-btn').addEventListener('click', function() {
+//     const inputVal = document.querySelector('.reply-input').value;
+//     if(inputVal.trim() !== "") {
+//         alert(inputVal);
+//     }
+// });
+
+const submitBtn = document.querySelector('.redPencil');
+
+submitBtn.addEventListener('click', function() {
+    const inputField = document.querySelector('.reply-input');
+    const content = inputField.value;
+
+    if (content.trim() === "") {
+        alert("내용을 입력해주세요!");
+    } else {
+        // 작성한 내용을 alert창으로 출력
+        alert(content);
+        
+        // 입력 완료 후 필드 초기화 및 입력창 숨기기 (선택 사항)
+        inputField.value = "";
+        document.querySelector('.reply-input-area').style.display = 'none';
+    }
+});
+
+
+
+const button2 = document.getElementById("anonymImg2");
+
+let clicked2 = true;
+
+button2.addEventListener("click", function () {
+  if (clicked2 === true) {
+    button2.src = "../img/container.articles.write.anonym.active.png";
+  } else {
+    button2.src = "../img/container.articles.write.anonym.png";
+  }
+  clicked2 = !clicked2;
+});
