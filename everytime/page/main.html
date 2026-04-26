@@ -8,38 +8,70 @@
     <script src="../js/main.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="everytime-logo">
-            <img src="../img/aside.title.hamburger.png" alt="메뉴" class="hamburger-icon" onclick="toggleNav()">
+<header class="main-header">
+    <div class="header-inner">
+        
+        <div class="desktop-header">
+            <div class="everytime-logo">
+                <a href="https://everytime.kr">
+                    <img src="../img/에타.png" alt="에타 로고" class="logo-img">
+                </a>
+                <div class="logo-text">
+                    <p class="logo-everytime">에브리타임</p>
+                    <p class="logo-univname">덕성여대</p>
+                </div>
+            </div>
             
-            <a href="https://everytime.kr">
-                <img src="../img/에타.png" alt="에타 로고" class="logo-img">
-            </a>
-            <div class="logo-text">
-                <p class="logo-everytime">에브리타임</p>
-                <p class="logo-univname">덕성여대</p>
+            <ul class="banner-top">
+                <li><a href="https://everytime.kr">게시판</a></li>
+                <li><a href="https://everytime.kr/timetable">시간표</a></li>
+                <li><a href="https://everytime.kr/lecture">강의실</a></li>
+                <li><a href="https://everytime.kr/calculator">학점계산기</a></li>
+                <li><a href="https://everytime.kr/friend">친구</a></li>
+                <li><a href="https://bookstore.everytime.kr">책방</a></li>
+                <li><a href="https://www.campuspick.com">캠퍼스픽</a></li>
+            </ul>
+
+            <div class="users-menu">
+                <a href="https://everytime.kr/message"><img src="../img/icn_m_chat_gray800_light.png" alt="쪽지" class="icon-img"></a>
+                <a href="https://everytime.kr/my"><img src="../img/icn_m_account_gray800_light.png" alt="내 정보" class="icon-img"></a>
             </div>
         </div>
-        
-        <ul class="banner-top">
-            <li class="banner-top-option"><a href="https://everytime.kr">게시판</a></li>
-            <li><a href="https://everytime.kr/timetable">시간표</a></li>
-            <li><a href="https://everytime.kr/lecture">강의실</a></li>
-            <li><a href="https://everytime.kr/calculator">학점계산기</a></li>
-            <li><a href="https://everytime.kr/friend">친구</a></li>
-            <li><a href="https://bookstore.everytime.kr">책방</a></li>
-            <li><a href="https://www.campuspick.com">캠퍼스픽</a></li>
-        </ul>
 
-        <div class="users-menu">
-            <a href="https://everytime.kr/message">
-                <img src="../img/icn_m_chat_gray800_light.png" alt="쪽지" class="icon-img">
-            </a>
-            <a href="https://everytime.kr/my">
-                <img src="../img/icn_m_account_gray800_light.png" alt="내 정보" class="icon-img">
-            </a>
+        <div class="mobile-header">
+            <img src="../img/aside.title.hamburger.png" alt="메뉴" class="hamburger-icon" onclick="toggleNav()">
+            <p class="which-board">비밀게시판</p>
         </div>
-    </header>
+
+    </div>
+</header>
+
+
+
+<nav class="side-hamburger">
+    <div class="everytime-logo-hamburger">            
+        <a href="https://everytime.kr"><img src="../img/에타.png" alt="에타 로고" class="logo-img"></a>
+        <div class="logo-text">
+            <p class="logo-everytime">에브리타임</p>
+            <p class="logo-univname">덕성여대</p>
+        </div>
+    </div>
+    
+    <ul class="banner-top">
+        <li><a href="https://everytime.kr">게시판</a></li>
+        <li><a href="https://everytime.kr/timetable">시간표</a></li>
+        <li><a href="https://everytime.kr/lecture">강의실</a></li>
+        <li><a href="https://everytime.kr/calculator">학점계산기</a></li>
+        <li><a href="https://everytime.kr/friend">친구</a></li>
+        <li><a href="https://bookstore.everytime.kr">책방</a></li>
+        <li><a href="https://www.campuspick.com">캠퍼스픽</a></li>
+    </ul>
+
+    <div class="users-menu">
+        <a href="https://everytime.kr/message"><img src="../img/icn_m_chat_gray800_light.png" alt="쪽지" class="icon-img"></a>
+        <a href="https://everytime.kr/my"><img src="../img/icn_m_account_gray800_light.png" alt="내 정보" class="icon-img"></a>
+    </div>
+</nav>
 
 <nav class="bulletin-board">
         <div class="board-type">
