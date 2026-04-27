@@ -8,6 +8,7 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
+    margin-right: 40px;
 }
 
 .logo-img {
@@ -18,6 +19,7 @@ body {
 .logo-text {
     display: flex;
     flex-direction: column; 
+    white-space: nowrap;
 }
 
 .logo-everytime {
@@ -29,7 +31,7 @@ body {
 
 .logo-univname {
     margin: 0;
-    color: #121212;
+    color: #292929;
     font-size: 22px;
     font-weight: bold;
 }
@@ -37,34 +39,37 @@ body {
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 15px 100px; 
+    width: 1180px;
+    box-sizing: border-box;
+    margin: 0 auto;
 }
 
 .banner-top {
     display: flex;
     align-items: center;
     list-style: none;
-    margin: 0;
     padding: 0;
-    gap: 30px;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .banner-top a {
     text-decoration: none; /* 하이퍼링크 시 생기는 파란 글씨 밑 밑줄 제거용*/
-    color: #1b1a1a;
+    color: #444444;
     font-weight: bold;
     font-size: 16px;
+    
 }
 
 .banner-top-option a {
-    color: #c92a18; 
+    color: #f91f15; 
 }
 
 .users-menu {
     display: flex;
     align-items: center;
     gap: 15px;
+    flex-shrink: 0;
 }
 
 .icon-img {
@@ -79,17 +84,23 @@ header {
     border-bottom: 1px solid #e3e3e3;
     display: flex;
     padding: 15px 0;
-    justify-content: center;
+    justify-content: flex-start;
+    overflow-x: auto;
 }
 
 .board-type {
     display: flex;
     border-right: 1px solid #e3e3e3;
     padding: 0 20px;
+    flex-shrink: 0;
+}
+
+.board-type:first-child {
+    margin-left: auto;
 }
 
 .board-type:last-child {
-    border-right: none;
+    margin-right: auto;
 }
 
 .board-type-list {
@@ -105,29 +116,32 @@ header {
 .board-type-list li {
     font-size: 13px;
     color: #444444;
+    white-space: nowrap;
 }
 
 .board-type-list .secret-board {
-    color: #c62917;
+    color: #f91f15;
     font-weight: bold;
 }
 
 .board-type-list .clickForMore {
-    color: #c62917;
+    color: #f91f15;
 }
 
 .main-container {
     display: flex; 
-    justify-content: center;
-    padding: 25px 100px;
+    width: 1180px;
+    margin: 0 auto;
+    justify-content: flex-start; /* 가로 길이 줄어들 시 right-sidebar부터 사라지도록 center -> flex-start로 변경*/
+    padding: 25px 0;
     gap: 20px;
 }
 
 
 .board-contents {
-    flex: 2;
     background-color: #ffffff;
     width: 780px;
+    flex-shrink: 0;
 }
 
 .board-qandhot-wrap {
@@ -167,13 +181,15 @@ header {
 }
 
 .questions-hot-each {
-    background-color: #f2fefe;
+    background-color: #eafffb;
     color: #666;
     font-size: 13px;
     text-decoration: none;
     padding: 12px;
     border-radius: 12px;
     margin: 0 0 0 0;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .board-hot-whole {
@@ -288,7 +304,8 @@ header {
 }
 
 .right-sidebar {
-    flex: 1;
+    width: 373px;
+    flex-shrink: 0;
 }
 
 .sidebar-box {
@@ -342,6 +359,8 @@ header {
     font-size: 14px;
     padding: 0;
     margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .time {
@@ -350,6 +369,8 @@ header {
     line-height: 18px;
     color: #a6a6a6;
     font-size: 11px;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .sidebar-link:last-child .sidebar-item {
@@ -388,7 +409,7 @@ header {
 
 .vote-count {
     font-size: 12px;
-    color: #c62917;
+    color: #f91f15;
     margin-right: 8px;
 }
 
@@ -513,10 +534,6 @@ header {
 
 
 
-
-
-
-
 .hamburger-icon {
     display: none;
     width: 24px;
@@ -525,43 +542,71 @@ header {
     margin-right: 10px;
 }
 
+.mobile-header, .side-hamburger {
+    display: none;
+}
+
+.header-inner {
+    width: 100%;
+    padding: 15px 100px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.desktop-header {
+    display: flex;
+    align-items:center;
+}
+
+.desktop-header .banner-top {
+    margin: 0 0 0 40px;
+    gap: 24px;
+}
+
+.users-menu {
+    margin-left: auto;
+}
+
+
+
 @media (max-width: 640px) {
     header {
-        padding: 15px 20px; 
+        height: 50px;
     }
     
-    .banner-top {
+    .banner-top, .everytime-logo {
         display: none; 
+    }
+
+    .mobile-header {
+        display: flex;
+        align-items: center;
+        height: 50px;
     }
 
     .hamburger-icon {
         display: block;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        margin-right: 15px;
     }
 
     .bulletin-board {
-        display: none; /* 처음에 숨겨둠 */
-        flex-direction: column; /* 세로로 나열 */
-        position: absolute;
-        top: 70px; /* 헤더 높이 아래로 */
-        left: 0;
-        width: 100%;
-        background-color: white;
-        z-index: 1000;
-        border-bottom: 2px solid #e3e3e3;
-    }
-
-    .bulletin-board.active {
         display: flex;
+        flex-direction: row; 
+        overflow-x: auto; 
+        justify-content: flex-start;
+        border-bottom: 2px solid #e3e3e3;
+        background-color: #f8f8f8;
     }
 
     .board-type {
-        border-right: none;
-        border-bottom: 1px solid #e3e3e3;
-        padding: 15px 20px;
-    }
-    
-    .board-type:last-child {
+        border-right: 1px solid #e3e3e3;
         border-bottom: none;
+        padding: 0px 20px;
+        flex-shrink: 0; 
+        white-space: nowrap;
     }
 
     .right-sidebar {
@@ -579,54 +624,171 @@ header {
     .new-article-input {
         width: 90%;
     }
-}
 
-.hamburger-icon {
-    display: none;
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-    margin-right: 10px;
-}
-
-@media (max-width: 640px) {
-    header {
-        padding: 15px 20px; 
-    }
-
-    .banner-top {
-        display: none; 
-    }
-
-    .hamburger-icon {
-        display: block;
-    }
-
-    .bulletin-board {
+    .side-hamburger {
         display: none;
+        position: fixed;
         flex-direction: column;
-        padding: 0;
+        align-items: flex-start;
+        left: 0;
+        top: 0;
+        width: 75%;
+        height: 100vh;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        background-color: #fff;
+        z-index: 1000;
     }
 
-    .bulletin-board.active {
+    .side-hamburger.active {
         display: flex;
     }
 
-    .board-type {
-        border-right: none;
-        border-bottom: 1px solid #e3e3e3;
-        padding: 15px 20px;
-    }
-
-    .right-sidebar {
-        display: none;
-    }
-
-    .main-container {
-        padding: 15px 20px;
-    }
-
-    .board-contents {
+    .everytime-logo-hamburger {
+        display: flex;
+        align-items: center;
         width: 100%;
+        box-sizing: border-box;
+        padding: 12px 24px;
+        gap: 8px;
+    }
+
+    .everytime-logo-hamburger a {
+        width: 40px;
+        height:40px;
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-everytime {
+        margin-left: 3px;
+        line-height: 15px;
+        font-size: 12px;
+    }
+
+    .logo-univname {
+        line-height: 25px;
+        color: #292929;
+        font-size: 22px;
+    }
+
+    .banner-top {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%
+
+    }
+
+    .banner-top li {
+        width: 100%;
+    }
+
+    .banner-top a {
+        display: block;
+        padding: 12px 24px;
+        box-sizing: border-box;
+        width: 100%;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    
+    .users-menu {
+        display: flex;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        padding-left: 24px;
+        height: 80px;
+    }
+
+    .desktop-header { 
+        display: none; 
+    }
+    
+    .header-inner {
+        width: 100%;
+        padding: 0 15px;
+        height: 50px;
+    }
+
+    .mobile-header {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    .which-board {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .side-hamburger {
+        display: none;
+        position: fixed;
+        flex-direction: column;
+        align-items: flex-start;
+        left: 0;
+        top: 0;
+        width: 75%;
+        height: 100vh;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+        background-color: #fff;
+        z-index: 9999;
+    }
+
+    .side-hamburger.active {
+        display: flex;
+    }
+
+    .everytime-logo-hamburger {
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+        border-bottom: 1px solid #e3e3e3;
+        gap: 8px;
+    }
+
+    .logo-img {
+        width: 40px;
+        height: 40px;
+        margin-top: 2px;
+    }
+
+    .banner-top li {
+        width: 100%;
+    }
+
+    .banner-top a {
+        display: block;
+        padding: 15px 20px;
+        box-sizing: border-box;
+        width: 100%;
+        color: #121212;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .side-hamburger .banner-top a.active-menu {
+        background-color: #f9f9f9;
+        color: #F91F15;
+    }
+
+    .side-hamburger .users-menu {
+        display: flex;
+        gap: 15px;
+        margin-top: auto;
+        padding: 20px;
+    }
+
+    .side-hamburger .banner-top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    gap: 0;
     }
 }

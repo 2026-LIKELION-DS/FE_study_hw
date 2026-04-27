@@ -4,41 +4,76 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f8f8f8;
     font-family: sans-serif;
 }
 
 .signup-container {
-    display: flex;
+    box-sizing: border-box;
+    border: 1px solid #EDEDED;
+    border-radius: 12px;
+    margin: 24px auto;
+    padding: 24px;
+    width: 780px;
     flex-direction: column;
-    align-items: center;
-    background-color: white;
-    padding: 50px 30px;
-    border: 1px solid #e3e3e3;
-    border-radius: 10px;
-    width: 300px;
 }
 
-.eta-logo { width: 50px; height: 50px; }
-.title { color: #c92a18; margin-top: 10px; margin-bottom: 30px; font-size: 20px; }
-.signup-form { display: flex; flex-direction: column; width: 100%; gap: 10px; }
+.announcement {
+    margin-top: 8px;
+    color: #737373;
+    font-size: 14px;
+    line-height: 5px;
+}
+
+.emphasize {
+    color: #292929;
+    font-weight: bold;
+}
+
+.signup-form {
+    margin-top: 48px;
+}
+
+.each-input {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+}
+
+label {
+    line-height: 20px;
+    color: #737373;
+    font-size: 12px;
+    font-weight: bold;
+}
+
 .input-box {
-    padding: 12px;
-    border: 1px solid #e3e3e3;
-    border-radius: 5px;
-    background-color: #f8f8f8;
+    box-sizing: border-box;
+    margin-top: 4px;
+    padding: 8px 40px 8px 8px;
+    border: 1px solid #EDEDED;
+    border-radius: 12px;
+    width: 100%;
+    height: 40px;
+    line-height: 24px;
+    color: #292929;
+    font-size: 16px;
+    background-color: #F9F9F9;
     outline: none;
 }
+
 .submit-btn {
-    padding: 15px;
-    border: none;
-    border-radius: 5px;
-    background-color: #fca59e;
+    margin-top: 24px;
+    border: 0;
+    border-radius: 12px;
+    width: 100%;
+    height: 40px;
     color: white;
+    font-size: 16px;
     font-weight: bold;
-    cursor: pointer;
-    margin-top: 10px;
+    background-color: #6b6b6b;
 }
+
 .submit-btn.active {
-    background-color: #c92a18; 
+    background-color: #f91f15;
+    cursor: pointer;
 }

@@ -23,12 +23,41 @@ function toggleQuestion(checkbox) {
 
 
 function toggleNav() {
-    const navBoard = document.querySelector(".bulletin-board");
-    
-    navBoard.classList.toggle("active");
+    const sideHamburger = document.querySelector(".side-hamburger");
+    sideHamburger.classList.toggle("active");
 }
 
-function toggleNav() {
-    const navBoard = document.querySelector(".bulletin-board");
-    navBoard.classList.toggle("active");
+const menuLinks = document.querySelectorAll(".side-hamburger .banner-top a");
+
+if (menuLinks.length > 0) {
+    menuLinks[0].classList.add("active-menu");
 }
+
+for (let i = 0; i < menuLinks.length; i++) {
+    menuLinks[i].addEventListener("mouseover", function() {
+        if (!this.classList.contains("active-menu")) {
+            this.style.backgroundColor = "#f9f9f9";
+            this.style.color = "#f91f15";
+        }
+    });
+
+    menuLinks[i].addEventListener("mouseout", function() {
+        if (!this.classList.contains("active-menu")) {
+            this.style.backgroundColor = "";
+            this.style.color = "#1b1a1a";
+        }
+    });
+
+    menuLinks[i].addEventListener("click", function(event) {
+        for (let j = 0; j < menuLinks.length; j++) {
+            menuLinks[j].classList.remove("active-menu");
+            menuLinks[j].style.backgroundColor = "";
+            menuLinks[j].style.color = "#1b1a1a";
+        }
+        
+        this.classList.add("active-menu");
+        this.style.backgroundColor = "#f9f9f9";
+        this.style.color = "#f91f15";
+    });
+}
+
