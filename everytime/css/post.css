@@ -11,7 +11,7 @@ body {
     width: 780px;
     height: auto;
     background-color: #ffffff;
-    border: 1px solid #e3e3e3;
+    border: solid 1px lightgray;
 }
 
 .title {
@@ -21,18 +21,25 @@ body {
     padding: 15px 20px;
     font-size: 18px;
     font-weight: bold;
+
     color: #000000;
+    border: solid 1px lightgray;
 }
 
 .main_content {
     display: flex;
     align-content: flex-start;
     padding: 20px;
+
     width: 740px;
     height: 600px;
     margin: 0;
     font-size: 14px;
+
+    resize: none;
+
     color: #666;
+    border: solid 1px lightgray;
 }
 
 .bottom_option {
@@ -43,6 +50,8 @@ body {
     height: 50px;
     border-top: 1px solid #f2f2f2;
     width: 100%;
+
+    border: solid 1px lightgray;
 }
 
 .bottom_option div {
@@ -51,7 +60,13 @@ body {
 }
 
 .sharp, .clip {
-    margin-right: 15px;
+    padding: 0px;
+    border: none;
+    background-color: transparent;
+}
+
+.sharp {
+    padding: 2px 4px 2px 2px;
 }
 
 .bottom_option img {
@@ -81,11 +96,14 @@ body {
 }
 
 .submit {
-    margin-left: auto;
+    padding: 0px;
+    margin: 3px 0px 0px 0px;
+    border: none;
+    background-color: transparent;
 }
 
 .submit img {
-    height: 40px;
+    height: 50px;
     background-color: #ff1900;
 }
 
